@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(173, 128, 128);
+}
+header{
+    position: fixed;
+    width: 99%;
+    height: 70px;    
+    background-color: rgb(97, 97, 153);
+}
+header img { 
+    position: relative;
+    border-radius: 10px;
+    width: 40px;
+    top: 13px;
+    left: 20px;
+
+}
+header h2{
+    position: relative;
+    bottom: 40px;
+    left: 63px;
+}
+.rightbar { 
+    position: fixed;
+    left: 66%;
+    top: 30px;
+    text-align: center;
+    font-size: 24px;
+    word-spacing: 11px;
+}
+.login{
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    word-spacing: 31px;
+    font-size: 24px;
+}
+.login a{ 
+    text-decoration: none;
+    font-size: 28px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: darkgrey;
+}
