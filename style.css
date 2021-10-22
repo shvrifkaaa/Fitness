@@ -1,12 +1,28 @@
+@keyframes moving{
+    from{ left: 0%;}
+    to { left: 20%;}
+}
+@-webkit-keyframes moving{ 
+    from{ left: 0%;}
+    to { left: 20%;}
+}
+#post1_text{
+    animation: moving 5s infinite;
+    -webkit-animation: moving 5s infinite;
+    position: relative;
+}
 body{
     background-color: rgb(173, 128, 128);
 }
 header{
     position: fixed;
-    width: 99%;
+    width: 120em;
     height: 70px;    
-    background-color: rgb(97, 97, 153);
+    background-color: rgb(255, 156, 118);
+    left: 0%;
+    top: 0px;
 }
+
 header img { 
     position: relative;
     border-radius: 10px;
@@ -31,7 +47,7 @@ header h2{
 .login{
     position: fixed;
     top: 2%;
-    right: 5%;
+    right: 3%;
     word-spacing: 31px;
     font-size: 24px;
 }
@@ -41,4 +57,35 @@ header h2{
     border: 1px solid;
     border-radius: 25px;
     background-color: darkgrey;
+}
+.post1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../fitness/img1.webp);
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#post1_text h1{
+    position: fixed;
+    top: 26px;
+    font-family: orelega-one;
+    font-size: 69px;
+    left: 46px;
+}
+#post1_text h4{
+    position: fixed;
+    top: 22%;
+    left: 46px;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+#post1_text h5{
+    position: fixed;
+    top: 29%;
+    left: 45px;
+    width: 35%;
+    font-size: 23px;
+    word-spacing: 6px;
+    letter-spacing: 1px;
 }
