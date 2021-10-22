@@ -1,16 +1,4 @@
-@keyframes moving{
-    from{ left: 0%;}
-    to { left: 20%;}
-}
-@-webkit-keyframes moving{ 
-    from{ left: 0%;}
-    to { left: 20%;}
-}
-#post1_text{
-    animation: moving 5s infinite;
-    -webkit-animation: moving 5s infinite;
-    position: relative;
-}
+
 body{
     background-color: rgb(173, 128, 128);
 }
@@ -65,6 +53,21 @@ header h2{
     background-size: cover;
     color: white;
 }
+/* 
+@keyframes moving {
+    0% {left: 0px;}
+    100%{left: 200px}
+    }
+@-webkit-keyframes moving {
+       from {left: 0px;}
+    to {left: 200px;}
+}
+#post1_text {
+    animation: moving 3s infinite; 
+    -webkit-animation: moving 3s infinite; 
+    animation-fill-mode: both;
+    position:absolute;
+} */
 
 #post1_text h1{
     position: fixed;
@@ -88,4 +91,32 @@ header h2{
     font-size: 23px;
     word-spacing: 6px;
     letter-spacing: 1px;
+}
+#post1_text button{
+    position: relative;
+    width: 180px;
+    top: 45vh;
+    word-spacing: 4.5px;
+    text-align: center;
+    left: 20vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 17px;
+    transition: 1s;
+}
+#post1_text button:hover{
+    position: relative;
+    width: 180px;
+    /* top: 44vh; */
+    word-spacing: 5px;
+    text-align: center;
+    /* left: 19vh; */
+    border: 1px solid black;
+    border-radius: 10px;
+    /* height: -5px; */
+    font-size: 19px;
+    transition: 1.5s;
+    background-color: #aa3ec2c4;
+    box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
 }
