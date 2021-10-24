@@ -14,6 +14,7 @@ header{
     background-color: rgb(255, 156, 118);
     left: 0%;
     top: 0px;
+    z-index: 1;
 }
 
 header img { 
@@ -37,6 +38,9 @@ header h2{
     font-size: 24px;
     word-spacing: 11px;
 }
+.rightbar a{
+    scroll-behavior:  smooth;
+}
 .login{
     position: fixed;
     top: 2%;
@@ -51,6 +55,15 @@ header h2{
     border-radius: 25px;
     background-color: darkgrey;
 }
+.container{
+    height: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/* .post1  .post2{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
 .post1{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/img1.webp);
     height: 99vh;
@@ -66,12 +79,14 @@ header h2{
 #post1_text{ 
     padding-top: 15px;
     /* position: unset; */
-    animation: post1 4s 1;
-    /* margin-bottom: -20px; */
+    animation: post1 2.5s 1;
+    margin-bottom: -20px;
+    opacity: 1;
 }
 @keyframes post1 { 
     0%{
-        margin-left: -650px;
+        margin-left: -150px;
+        opacity: 0;
     }
 }
 
@@ -151,7 +166,35 @@ header h2{
 }
 .post2_text{ 
     position: relative;
-    left: 140vh;
-    bottom: 82vh;
-    width: 300px;
+    left: 125vh;
+    bottom: 73vh;
+    width: 500px;
+    animation: post2 3s 1;
+    opacity: 1;
+}
+/* @keyframes post2{
+    0%{
+        margin-left: -80px;
+        opacity: 0;
+    }
+} */
+.post2_text #text1{
+    font-size: 48px;
+    font-family: roboto-bold, roboto, sans-serif;
+    color: #000000;
+    position: unset;
+    font-weight: 700;
+}
+.post2_text #text2{
+    font-size: 21px;
+    font-family: roboto-thin, roboto, sans-serif;
+    width: 316px;
+    height: 54px;
+}
+.post2_text #text3{
+    color: #6e6e6e;
+    font-size: 16px;
+    font-family: roboto-thin,roboto,sans-serif;
+    width: 390px;
+    height: 119px;
 }
