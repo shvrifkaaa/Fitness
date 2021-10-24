@@ -9,20 +9,19 @@
 <body>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../fitness/css/style.css">
-    <link rel="stylesheet" href="/css/style.css">
     <header style="position: fixed;"> 
             <div class="logo"> 
                 <img src="../fitness/img/avalogo.png" alt="1">
                 <h2>FitName</h2>
             </div>
             <div class="rightbar">
-                <a href="#text1" style="text-decoration: none;" class="button__main">About</a>
-                <a href="" style="text-decoration: none;" class="button__about">Challenges</a>
-                <a href="" style="text-decoration: none;" class="button__training">Community</a>
-                <a href="" style="text-decoration: none;" class="button__contacts">Contact</a>
+                <a href="####" style="text-decoration: none;" id="btn_about">About</a>
+                <a href="" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+                <a href="" style="text-decoration: none;" id="btn_community">Community</a>
+                <a href="" style="text-decoration: none;" id="btn_contact">Contact</a>
             </div>
             <div class="login" style="position: fixed;">
-                <img src="/img/avalogo.png" style="width: 32px; border-radius: 16px; top: 8px; left: -2px;" alt="">
+                <img src="../fitness/img/avalogo.png" style="width: 32px; border-radius: 16px; top: 8px; left: -2px;" alt="">
                 <a href="" class="LogIn"> log in </a>
             </div>
     </header>
@@ -40,7 +39,7 @@
                 I,m a paragraph. Click here to add your own text <br/>
                 and edit me. Let your users get to know you.    
             </h5>
-                <button> <a href="####" style="text-decoration: none;"> View Challenges </a>   </button>
+                <button> <a href="####" style="text-decoration: none;" id="Ahref"> View Challenges </a>   </button>
         </div>    
     </div>
 
@@ -48,19 +47,13 @@
 
     <div class="post2"> 
 
-        <img data-aos="fade-up"
-             data-aos-duration="3000"
-        src="../fitness/img/img2.webp" alt="imgpost2 " style="
+        <img data-aos="fade-up"data-aos-duration="3000"
+        src="../fitness/img/img2.webp" alt="" class="img2" style="
     position: relative;
     width: 710px;
     height: 770px;
     left: 11%;
-    margin-top: 5%;" 
-    >
-
-
-
-
+    margin-top: 5%;">
 
         <div class="post2_text">
              <span id="text1">   ABOUT H2FIT  </span>
@@ -75,7 +68,7 @@
                  users know a little more about you. 
             </span>
 
-
+                
         </div>
     </div>
     
@@ -110,10 +103,10 @@
     
     
     
-    <script src="../fitness/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init()
-</script>
+    <script> AOS.init() </script>
+    <script src="../fitness/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'/>    <script src="../fitness/js/waypoint.js"></script>
 </body>
 </html>
