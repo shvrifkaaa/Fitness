@@ -82,6 +82,7 @@ header h2{
     animation: post1 2.5s 1;
     margin-bottom: -20px;
     opacity: 1;
+    width: 40%;
 }
 @keyframes post1 { 
     0%{
@@ -102,12 +103,11 @@ header h2{
 }
 #post1_text h4{
     position: unset;
-    width: 29%;
     /* top: 22%; */
     /* left: 46px; */
     font-size: 30px;
     word-spacing: 10px;
-    margin: 0.3% 2.5% 0;
+    margin: 0.3% 6.3% 0;
 }
 #post1_text h5{
     position: unset;
@@ -117,7 +117,7 @@ header h2{
     font-size: 19px;
     word-spacing: 3px;
     letter-spacing: 0px;
-    margin: 0.8% 2.5% 0;
+    margin: 0.8% 6.3% 0;
 }
 #post1_text button{
     position: unset;
@@ -132,7 +132,7 @@ header h2{
     font-size: 17px;
     transition: 1s;
     background-color: lightskyblue;
-    margin: 1% 2.4% 0;
+    margin: 3% 6.3% 0;
 }
 #post1_text button:hover{
     position: relative;
@@ -169,11 +169,14 @@ header h2{
     left: 125vh;
     bottom: 73vh;
     width: 500px;
-    animation: post2 3s 1;
+    animation: post2text 9s 1;
     opacity: 1;
 }
-/* @keyframes post2{
+/* @keyframes post2text{
     0%{
+        opacity: 0;
+    }
+    50%{
         margin-left: -80px;
         opacity: 0;
     }
@@ -197,4 +200,31 @@ header h2{
     font-family: roboto-thin,roboto,sans-serif;
     width: 390px;
     height: 119px;
+}
+.post2_text button{
+    position: unset;
+    width: 170px;
+    /* top: 4vh; */
+    word-spacing: 4.5px;
+    text-align: center;
+    /* left: 5vh; */
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 17px;
+    transition: 1s;
+    background-color: lightskyblue;
+    margin: 5% 6.3% 1% 2%;
+}
+.post2_text button:hover{
+    position: relative;
+    /* width: 180px; */
+    word-spacing: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: 1.5s;
+    background-color: #27cdd0e8;
+    box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
 }
