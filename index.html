@@ -7,10 +7,12 @@
     <title>Fitness</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../fitness/style.css">
-    <header> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fitness/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <header style="position: fixed;"> 
             <div class="logo"> 
-                <img src="../fitness/relault.jpg" alt="1">
+                <img src="../fitness/img/avalogo.png" alt="1">
                 <h2>FitName</h2>
             </div>
             <div class="rightbar">
@@ -20,10 +22,12 @@
                 <a href="" style="text-decoration: none;" class="button__contacts">Contact</a>
             </div>
             <div class="login" style="position: fixed;">
-                <img src="../fitness/avalogo.png" style="width: 32px; border-radius: 16px; top: 8px; left: -2px;" alt="">
+                <img src="/img/avalogo.png" style="width: 32px; border-radius: 16px; top: 8px; left: -2px;" alt="">
                 <a href="" class="LogIn"> log in </a>
             </div>
     </header>
+
+
     <div class="post1">
         <div id="post1_text">
             <h1> 
@@ -36,12 +40,41 @@
                 I,m a paragraph. Click here to add your own text <br>
                 adn edit me. Let your users get to know you.    
             </h5>
-                <button> View Challenges    </button>
+                <button> <a href="####" style="text-decoration: none;"> View Challenges </a>   </button>
         </div>    
     </div>
 
 
 
+    <div class="post2"> 
+
+        <img data-aos="fade-up"
+             data-aos-duration="3000"
+        src="../fitness/img/img2.webp" alt="imgpost2 " style="
+    position: relative;
+    width: 710px;
+    height: 770px;
+    left: 11%;
+    margin-top: 5%;" 
+    >
+
+
+
+
+
+        <div class="post2_text">
+            <h1>   <span id="text1">   ABOUT H2FIT  </span>   </h1>
+            <span id="text2"> Increase your fitness and strenght <br> 
+                 anywhere, anytime.  <br> 
+            </span>
+            <span id="text3">I'm a paragraph. Click here to add your own text and <br>
+                 edit me. It’s easy. Just click “Edit Text” or double click <br>
+                  me to add your own content and make changes to the <br>
+                  font. I’m a great place for you to tell a story and let your <br>
+                 users know a little more about you.</span>
+
+        </div>
+        
 
 
 
@@ -53,5 +86,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../fitness/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init()
+</script>
 </body>
 </html>

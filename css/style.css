@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(173, 128, 128);
+    height: auto;
+    width: auto;
+}
+header{
+    position: fixed;
+    width: 120em;
+    height: 70px;    
+    background-color: rgb(255, 156, 118);
+    left: 0%;
+    top: 0px;
+}
+
+header img { 
+    position: relative;
+    border-radius: 10px;
+    width: 40px;
+    top: 13px;
+    left: 20px;
+
+}
+header h2{
+    position: relative;
+    bottom: 40px;
+    left: 63px;
+}
+.rightbar { 
+    position: fixed;
+    left: 66%;
+    top: 30px;
+    text-align: center;
+    font-size: 24px;
+    word-spacing: 11px;
+}
+.login{
+    position: fixed;
+    top: 2%;
+    right: 3%;
+    word-spacing: 31px;
+    font-size: 24px;
+}
+.login a{ 
+    text-decoration: none;
+    font-size: 28px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: darkgrey;
+}
+.post1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/img1.webp);
+    height: 99vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 196.4vh;
+    /* position: absolute; */
+    margin-top: 62px;
+    margin-left: -8px;
+}
+
+#post1_text{ 
+    padding-top: 15px;
+    /* position: unset; */
+    animation: post1 4s 1;
+    /* margin-bottom: -20px; */
+}
+@keyframes post1 { 
+    0%{
+        margin-left: -650px;
+    }
+}
+
+#post1_text h1{
+    position: unset;
+    /* display: block; */
+    /* top: 26px; */
+    font-family: roboto bold, roboto, sans-serif;
+    font-size: 68px;
+    /* left: 46px;  */
+    /* width: 28%; */
+    margin-left: 48px;
+}
+#post1_text h4{
+    position: unset;
+    width: 29%;
+    /* top: 22%; */
+    /* left: 46px; */
+    font-size: 30px;
+    word-spacing: 10px;
+    margin: 0.3% 2.5% 0;
+}
+#post1_text h5{
+    position: unset;
+    /* top: 15px; */
+    /* left: 45px; */
+    /* width: 35%; */
+    font-size: 19px;
+    word-spacing: 3px;
+    letter-spacing: 0px;
+    margin: 0.8% 2.5% 0;
+}
+#post1_text button{
+    position: unset;
+    width: 170px;
+    /* top: 4vh; */
+    word-spacing: 4.5px;
+    text-align: center;
+    /* left: 5vh; */
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 17px;
+    transition: 1s;
+    background-color: lightskyblue;
+    margin: 1% 2.4% 0;
+}
+#post1_text button:hover{
+    position: relative;
+    /* width: 180px; */
+    word-spacing: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: 1.5s;
+    background-color: #27cdd0e8;
+    box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
+}
+
+
+/* .post2{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(103, 173, 124);
+} */
+.post2{
+    background-color: rgb(103, 173, 124);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 196.4vh;
+    position: unset;
+    margin-top: 62px;
+    margin-left: -8px;
+}
+.post2_text{ 
+    position: relative;
+    left: 140vh;
+    bottom: 82vh;
+    width: 300px;
+}
