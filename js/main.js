@@ -13,8 +13,8 @@ header_about.addEventListener('click', () => {
     scrollTo(post2);
 })
 
-var end = document.querySelector('#text3');
+// var end = document.querySelector('#text3');
 
-end.waypoint(function () {
-    console.log('hello world');
-})
+// end.waypoint(function () {
+//     console.log('hello world');
+// })
