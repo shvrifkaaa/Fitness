@@ -66,7 +66,7 @@ header h2{
 } */
 .post1{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/img1.webp);
-    height: 99vh;
+    height: 94vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -146,8 +146,90 @@ header h2{
     background-color: #27cdd0e8;
     box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
 }
+.post1_text1{
+    width: 350px;
+    background-color: white;
+    height: 94vh;
+    position: absolute;
+    right: 8px;
+    top: 62px;
+}
+.post1_text1 .challenge1{
+    width: 290px;
+    height: 285px;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    left: 26px;
+    top: 70px;
+}
+.post1_text1 .challenge1 .text{
+    width: 100%;
+    font-family: roboto-bold, roboto, sans-serif;
+    margin-left: 25px;
+    font-size: 15px;
+}
+.post1_text1 .challenge1 button{
+    border: 1px solid black;
+    border-radius: 18px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    position: relative;
+    top: 26px;
+    left: 83px;
+    background-color: rgb(129, 75, 231);
+}
+.post1_text1 .challenge1 button:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.post1_text1 .challenge2{
+    width: 290px;
+    height: 285px;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    left: 26px;
+    top: 115px;
+}
+.post1_text1 .challenge2 .text{
+    width: 100%;
+    font-family: roboto-bold, roboto, sans-serif;
+    margin-left: 16px;
+    font-size: 14px;
+}
+.post1_text1 .challenge2 button{
+    border: 1px solid black;
+    border-radius: 18px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    position: relative;
+    top: 26px;
+    left: 83px;
+    background-color: rgb(129, 75, 231);
+}
+.post1_text1 .challenge2 button:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.post1_text1 .challenge1 button{
+    margin-left: 10px;
+}
+.post1_text1 .challenge2 button{
+    margin-left: 10px;
+}
 
-
+.vievAll_btn{
+    width: 100%;
+    height: 110px;
+    background-color: orange;
+    position: inherit;
+    bottom: 0px;
+}
 /* .post2{
     position: relative;
     display: inline-block;
@@ -166,8 +248,8 @@ header h2{
 }
 .post2_text{ 
     position: relative;
-    left: 125vh;
-    bottom: 73vh;
+    left: 115vh;
+    bottom: 50vh;
     width: 500px;
     animation: post2text 9s 1;
     opacity: 1;
@@ -231,7 +313,7 @@ header h2{
 .post2_text2 {
     position: relative;
     bottom: 21vh;
-    left: 205px;
+    left: 120px;
     width: 600px;
     font-family: sans-serif;
 }
@@ -253,7 +335,8 @@ header h2{
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;}
+    justify-content: space-around;
+}
 .trainers a {
     display: block;
     width: 712px;
@@ -261,6 +344,7 @@ header h2{
     float: left;
     position: relative;
     line-height: 0;
+    text-decoration: none;
 }
 .trainers a:after {
 	content: "";
@@ -268,7 +352,6 @@ header h2{
 	transition: opacity 0.5s ease-in-out;
 }
 .trainers a:hover:after {
-    
 	position: absolute;
 	top: 0;    
 	left: 0;   
@@ -281,7 +364,8 @@ header h2{
 }
 .trainers a:before {
 	content: "TRAINERS";
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
 	opacity: 0;    
 	transition: opacity 0.5s;
 }
@@ -306,3 +390,160 @@ header h2{
     height: 30px;
 
 } */
+.challenges {
+    position: relative;
+    background-color: rgb(197, 95, 146);
+}
+.post3_text1 {
+    width: 87%;
+    height: 250px;
+    color: #000000;
+    font-family: roboto-bold, roboto, sans-serif;
+    margin-top: 70px;
+    padding-top: 62px;
+    padding-left: 120px;
+    text-align: left;
+    animation: challenges 1s 1;
+    opacity: 1;
+}
+@keyframes challenges {
+    0%{
+        margin-left: -100px;
+        opacity: 0;
+    }
+}
+.post3_text1 h1 {
+    width: 550px;
+    height: 58px;
+    font-size: 48px;
+}
+.post3_text1 h6 {
+    width: 580px;
+    height: 44px;
+    font-size: 16px;
+    color: #6e6e6e;
+    padding-top: 20px;
+}
+
+
+.post3_text1 button{
+    position: relative;
+    left: 89%;
+    bottom: 130px;
+    width: 170px;
+    word-spacing: 4.5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 17px;
+    transition: 1s;
+    background-color: lightskyblue;
+    animation: btn 1s 1;
+    opacity: 1;
+}
+@keyframes btn {
+    0%{
+        margin-right: 150px;
+        opacity: 0;
+    }
+}
+.post3_text1 button:hover{
+    margin-left: -15px;
+    position: relative;
+    width: 195px;
+    word-spacing: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: 1s;
+    background-color: #27cdd0e8;
+    box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
+}
+.post3_block{
+    display: inline-block;
+    position: relative;
+    width: 98vh;
+}
+.post3_block .block1{
+    position: relative;
+    width: 495px;
+    height: 511px;
+    left: 15%;
+    border: 1px solid black;
+}
+.post3_block .block2{
+    position: relative;
+    width: 495px;
+    height: 511px;
+    left: 76%;
+    bottom: 53vh;
+    border: 1px solid black;
+}
+.post3_block .block3{
+    position: relative;
+    width: 495px;
+    height: 511px;
+    left: 138%;
+    bottom: 106vh;
+    border: 1px solid black;
+
+}
+.block1 p {
+    position: relative;
+    font-size: 24px;
+    font-family: roboto-bold;
+    margin-top: 30px;
+    margin-left: 55px;
+    color: black;
+}
+.block1 span h6{
+    color: black;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: roboto-thin, roboto, sans-serif;
+}
+.block2 p {
+    position: relative;
+    font-size: 24px;
+    font-family: roboto-bold;
+    margin-top: 30px;
+    margin-left: 55px;
+    color: black;
+}
+.block2 span h6{
+    color: black;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: roboto-thin, roboto, sans-serif;
+}
+.block3 p {
+    position: relative;
+    font-size: 24px;
+    font-family: roboto-bold;
+    margin-top: 30px;
+    margin-left: 55px;
+    color: black;
+}
+.block3 span h6{
+    color: black;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: roboto-thin, roboto, sans-serif;
+}
