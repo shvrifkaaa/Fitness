@@ -73,7 +73,7 @@ header h2{
     width: 196.4vh;
     /* position: absolute; */
     margin-top: 62px;
-    margin-left: -8px;
+    margin-left: -20px;
 }
 
 #post1_text{ 
@@ -86,6 +86,7 @@ header h2{
 }
 @keyframes post1 { 
     0%{
+        position: absolute;
         margin-left: -150px;
         opacity: 0;
     }
@@ -147,12 +148,20 @@ header h2{
     box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
 }
 .post1_text1{
-    width: 350px;
+    width: 342px;
     background-color: white;
     height: 94vh;
     position: absolute;
-    right: 8px;
+    right: 0px;
     top: 62px;
+    animation: post1_text1 3s 1;
+}
+
+@keyframes post1_text1{
+    0%{position: absolute;
+       right: -300px;
+    }
+
 }
 .post1_text1 .challenge1{
     width: 290px;
@@ -230,12 +239,6 @@ header h2{
     position: inherit;
     bottom: 0px;
 }
-/* .post2{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background-color: rgb(103, 173, 124);
-} */
 .post2{
     background-color: rgb(103, 173, 124);
     background-repeat: no-repeat;
@@ -244,8 +247,9 @@ header h2{
     width: 196.4vh;
     position: unset;
     margin-top: 62px;
-    margin-left: -8px;
+    margin-left: -20px;
 }
+
 .post2_text{ 
     position: relative;
     left: 115vh;
@@ -546,4 +550,16 @@ header h2{
     line-height: 50px;
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
+}
+.invite .left{
+    position: relative;
+    width: 700px;
+    left: 150px;
+    border: 1px solid black;
+    background-color: burlywood;
+}
+.invite .left .invite_text{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
 }
