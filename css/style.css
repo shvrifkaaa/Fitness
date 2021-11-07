@@ -468,7 +468,9 @@ header h2{
 .post3_block{
     display: inline-block;
     position: relative;
-    width: 98vh;
+    width: 951px;
+    height: 520px;
+    left: -20px;
 }
 .post3_block .block1{
     position: relative;
@@ -482,7 +484,7 @@ header h2{
     width: 495px;
     height: 511px;
     left: 76%;
-    bottom: 53vh;
+    bottom: 99%;
     border: 1px solid black;
 }
 .post3_block .block3{
@@ -490,7 +492,7 @@ header h2{
     width: 495px;
     height: 511px;
     left: 138%;
-    bottom: 106vh;
+    bottom: 105vh;
     border: 1px solid black;
 
 }
@@ -551,15 +553,53 @@ header h2{
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
 }
+.invite{
+    position: relative;
+    width: 1664px;
+    border: 1px solid black;
+    display: inline-block;
+    bottom: 86vh;
+    right: -6.44%;
+    height: 670px;
+}
 .invite .left{
     position: relative;
-    width: 700px;
-    left: 150px;
-    border: 1px solid black;
+    width: 831px;
+    height: inherit;
+    text-align: center;
+    left: 0px;
     background-color: burlywood;
 }
 .invite .left .invite_text{
     position: relative;
     text-align: center;
     margin-top: 40px;
+}
+.invite .right {
+    width: 832px;
+    border: 1px solid black;
+    left: 830px;
+    height: 670px;
+    position: relative;
+    bottom: 100.1%;
+}
+.right .invite_right_text input{
+    height: 52px;
+    margin-top: 10px;
+}
+.right .invite_right_text .first_name{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    top: 145px;
+    left: 180px;
+}
+.right .invite_right_text .second_name {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    top: 145px;
+    left: 350px;
 }
