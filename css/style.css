@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: roboto-thin,roboto,sans-serif;
+
 }
 body{
     background-color: rgb(173, 128, 128);
@@ -32,11 +34,11 @@ header h2{
 }
 .rightbar { 
     position: fixed;
-    left: 66%;
+    left: 62%;
     top: 30px;
     text-align: center;
     font-size: 24px;
-    word-spacing: 11px;
+    word-spacing: 23px;
 }
 .rightbar a{
     scroll-behavior:  smooth;
@@ -397,6 +399,7 @@ header h2{
 .challenges {
     position: relative;
     background-color: rgb(197, 95, 146);
+    height: 1666px;
 }
 .post3_text1 {
     width: 87%;
@@ -553,7 +556,7 @@ header h2{
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
 }
-.invite{
+#invite{
     position: relative;
     width: 1664px;
     border: 1px solid black;
@@ -562,7 +565,7 @@ header h2{
     right: -6.44%;
     height: 670px;
 }
-.invite .left{
+#invite .left{
     position: relative;
     width: 831px;
     height: inherit;
@@ -570,12 +573,14 @@ header h2{
     left: 0px;
     background-color: burlywood;
 }
-.invite .left .invite_text{
-    position: relative;
-    text-align: center;
-    margin-top: 40px;
+#invite .left .invite_left_text{
+    position: inherit;
+    text-align: left;
+    top: 200px;
+    left: 225px;
+    font-size:  24px;
 }
-.invite .right {
+#invite .right {
     width: 832px;
     border: 1px solid black;
     left: 830px;
@@ -583,9 +588,15 @@ header h2{
     position: relative;
     bottom: 100.1%;
 }
+.right .invite_right_text p{
+    font-size: 16px;
+    font-family: roboto-thin,roboto,sans-serif;
+}
 .right .invite_right_text input{
     height: 52px;
     margin-top: 10px;
+    font-size: 20px;
+    width: 225px;
 }
 .right .invite_right_text .first_name{
     position: relative;
@@ -602,4 +613,31 @@ header h2{
     height: 40px;
     top: 145px;
     left: 350px;
+}
+.right .invite_right_text .email {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    top: 200px;
+    left: 180px;
+
+}
+.right .invite_right_text .Subject {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    top: 160px;
+    left: 474px;
+}
+.right .invite_right_text .input_msg {
+    position: relative;
+    width: 467px;
+    height: 135px;
+    top: 200px;
+    left: 180px;
+}    
+.right .invite_right_text .input_msg input{
+    height: 150px;
+    width: 519px;
 }
