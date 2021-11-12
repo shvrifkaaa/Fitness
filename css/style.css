@@ -1,25 +1,30 @@
-*{
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+* {
     margin: 0;
     padding: 0;
-    font-family: roboto-thin,roboto,sans-serif;
+    font-family: roboto-thin, roboto, sans-serif;
 
 }
-body{
-    background-color: rgb(173, 128, 128);
+
+body {
+    background-color: rgb(228, 207, 207);
     height: auto;
     width: auto;
 }
-header{
+
+#header {
     position: fixed;
     width: 120em;
-    height: 70px;    
+    height: 70px;
     background-color: rgb(255, 156, 118);
     left: 0%;
     top: 0px;
     z-index: 1;
+    color: black;
 }
 
-header img { 
+#header img {
     position: relative;
     border-radius: 10px;
     width: 40px;
@@ -27,47 +32,47 @@ header img {
     left: 20px;
 
 }
-header h2{
+
+#header h2 {
     position: relative;
-    bottom: 40px;
-    left: 63px;
+    bottom: 25px;
+    left: 80px;
+    color: black;
 }
-.rightbar { 
+
+.rightbar {
     position: fixed;
-    left: 62%;
-    top: 30px;
+    left: 56%;
+    top: 14px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     word-spacing: 23px;
 }
-.rightbar a{
-    scroll-behavior:  smooth;
+
+.rightbar a {
+    scroll-behavior: smooth;
+    color: black;
+
 }
-.login{
+
+.login {
     position: fixed;
-    top: 2%;
+    top: 1.1%;
     right: 3%;
     word-spacing: 31px;
     font-size: 24px;
 }
-.login a{ 
+
+.login a {
     text-decoration: none;
     font-size: 28px;
     border: 1px solid;
     border-radius: 25px;
     background-color: darkgrey;
 }
-.container{
-    height: auto;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-/* .post1  .post2{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-} */
-.post1{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/img1.webp);
+
+.post1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img1.webp);
     height: 94vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +83,7 @@ header h2{
     margin-left: -20px;
 }
 
-#post1_text{ 
+#post1_text {
     padding-top: 15px;
     /* position: unset; */
     animation: post1 2.5s 1;
@@ -86,15 +91,16 @@ header h2{
     opacity: 1;
     width: 40%;
 }
-@keyframes post1 { 
-    0%{
+
+@keyframes post1 {
+    0% {
         position: absolute;
         margin-left: -150px;
         opacity: 0;
     }
 }
 
-#post1_text h1{
+#post1_text h1 {
     position: unset;
     /* display: block; */
     /* top: 26px; */
@@ -104,7 +110,8 @@ header h2{
     /* width: 28%; */
     margin-left: 48px;
 }
-#post1_text h4{
+
+#post1_text h4 {
     position: unset;
     /* top: 22%; */
     /* left: 46px; */
@@ -112,7 +119,8 @@ header h2{
     word-spacing: 10px;
     margin: 0.3% 6.3% 0;
 }
-#post1_text h5{
+
+#post1_text h5 {
     position: unset;
     /* top: 15px; */
     /* left: 45px; */
@@ -122,7 +130,8 @@ header h2{
     letter-spacing: 0px;
     margin: 0.8% 6.3% 0;
 }
-#post1_text button{
+
+#post1_text button {
     position: unset;
     width: 170px;
     /* top: 4vh; */
@@ -135,9 +144,11 @@ header h2{
     font-size: 17px;
     transition: 1s;
     background-color: lightskyblue;
+    border: none;
     margin: 3% 6.3% 0;
 }
-#post1_text button:hover{
+
+#post1_text button:hover {
     position: relative;
     /* width: 180px; */
     word-spacing: 5px;
@@ -147,9 +158,11 @@ header h2{
     font-size: 19px;
     transition: 1.5s;
     background-color: #27cdd0e8;
+    border: none;
     box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
 }
-.post1_text1{
+
+.post1_text1 {
     width: 342px;
     background-color: white;
     height: 94vh;
@@ -159,44 +172,52 @@ header h2{
     animation: post1_text1 3s 1;
 }
 
-@keyframes post1_text1{
-    0%{position: absolute;
-       right: -300px;
+@keyframes post1_text1 {
+    0% {
+        position: absolute;
+        right: -300px;
     }
 
 }
-.post1_text1 .challenge1{
+
+.post1_text1 .challenge1 {
     width: 290px;
     height: 285px;
     color: black;
     border: 1px solid black;
     position: relative;
     left: 26px;
-    top: 70px;
+    top: 60px;
 }
-.post1_text1 .challenge1 .text{
+
+.post1_text1 .challenge1 .text {
     width: 100%;
     font-family: roboto-bold, roboto, sans-serif;
     margin-left: 25px;
     font-size: 15px;
 }
-.post1_text1 .challenge1 button{
+
+.post1_text1 .challenge1 button {
     border: 1px solid black;
     border-radius: 18px;
     color: white;
     width: 100px;
     height: 35px;
     position: relative;
-    top: 26px;
+    top: 15px;
     left: 83px;
+    border: none;
     background-color: rgb(129, 75, 231);
 }
+
 .post1_text1 .challenge1 button:hover {
     transition: 0.5s;
     background-color: black;
     color: white;
+    border: none;
 }
-.post1_text1 .challenge2{
+
+.post1_text1 .challenge2 {
     width: 290px;
     height: 285px;
     color: black;
@@ -205,44 +226,57 @@ header h2{
     left: 26px;
     top: 115px;
 }
-.post1_text1 .challenge2 .text{
+
+.post1_text1 .challenge2 .text {
     width: 100%;
     font-family: roboto-bold, roboto, sans-serif;
     margin-left: 16px;
     font-size: 14px;
 }
-.post1_text1 .challenge2 button{
+
+.post1_text1 .challenge2 button {
     border: 1px solid black;
     border-radius: 18px;
     color: white;
     width: 100px;
     height: 35px;
     position: relative;
-    top: 26px;
+    top: 11px;
     left: 83px;
     background-color: rgb(129, 75, 231);
+    border: none;
 }
-.post1_text1 .challenge2 button:hover{
+
+.post1_text1 .challenge2 button:hover {
     transition: 0.5s;
     background-color: black;
     color: white;
-}
-.post1_text1 .challenge1 button{
-    margin-left: 10px;
-}
-.post1_text1 .challenge2 button{
-    margin-left: 10px;
+    border: none;
 }
 
-.vievAll_btn{
+.post1_text1 .challenge1 button {
+    margin-left: 10px;
+    border: none;
+}
+
+.post1_text1 .challenge2 button {
+    margin-left: 10px;
+    border: none;
+}
+
+.post1_text1 #vievAll_btn {
     width: 100%;
     height: 110px;
     background-color: orange;
-    position: inherit;
     bottom: 0px;
 }
-.post2{
-    background-color: rgb(103, 173, 124);
+.post1_text1 #viewAll_btn b{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.post2 {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -252,44 +286,50 @@ header h2{
     margin-left: -20px;
 }
 
-.post2_text{ 
+.post2_text {
     position: relative;
     left: 115vh;
     bottom: 50vh;
     width: 500px;
-    animation: post2text 9s 1;
+    animation: post2text 5s 1;
     opacity: 1;
 }
-@keyframes post2text{
-    0%{
+
+@keyframes post2text {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         margin-left: -80px;
         opacity: 0;
     }
 }
-.post2_text #text1{
+
+.post2_text #text1 {
     font-size: 48px;
     font-family: roboto-bold, roboto, sans-serif;
     color: #000000;
     position: unset;
     font-weight: 700;
 }
-.post2_text #text2{
+
+.post2_text #text2 {
     font-size: 21px;
     font-family: roboto-thin, roboto, sans-serif;
     width: 316px;
     height: 54px;
 }
-.post2_text #text3{
+
+.post2_text #text3 {
     color: #6e6e6e;
     font-size: 16px;
-    font-family: roboto-thin,roboto,sans-serif;
+    font-family: roboto-thin, roboto, sans-serif;
     width: 390px;
     height: 119px;
 }
-.post2_text button{
+
+.post2_text button {
     position: unset;
     width: 170px;
     /* top: 4vh; */
@@ -303,8 +343,10 @@ header h2{
     transition: 1s;
     background-color: lightskyblue;
     margin: 5% 6.3% 1% 2%;
+    border: none;
 }
-.post2_text button:hover{
+
+.post2_text button:hover {
     position: relative;
     /* width: 180px; */
     word-spacing: 5px;
@@ -315,7 +357,9 @@ header h2{
     transition: 1.5s;
     background-color: #27cdd0e8;
     box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
+    border: none;
 }
+
 .post2_text2 {
     position: relative;
     bottom: 21vh;
@@ -323,12 +367,14 @@ header h2{
     width: 600px;
     font-family: sans-serif;
 }
-.post2_text2 h1{
+
+.post2_text2 h1 {
     width: 766px;
     height: 58px;
     font-family: roboto-bold, roboto, sans-serif;
     font-size: 48px;
 }
+
 .post2_text2 p {
     width: 550 px;
     height: 44 px;
@@ -337,12 +383,14 @@ header h2{
     font-size: 16px;
     margin-top: 20px;
 }
+
 .trainers {
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .trainers a {
     display: block;
     width: 712px;
@@ -351,45 +399,62 @@ header h2{
     position: relative;
     line-height: 0;
     text-decoration: none;
+    transition: 0.8s;
+
 }
+
+.trainers a:hover {
+    transform: scale(0.986);
+    transition: 0.5s;
+}
+
 .trainers a:after {
-	content: "";
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
 }
+
 .trainers a:hover:after {
-	position: absolute;
-	top: 0;    
-	left: 0;   
-	display: block;
-	width: 100%;
-	height: 100%;    
-	background: transparent;
-	background-image: linear-gradient(180deg, rgba(107,90,221,0), rgba(107,90,221,1)); 
-	opacity: 0.8;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100.1%;
+    background: transparent;
+    background-image: linear-gradient(180deg, rgba(107, 90, 221, 0), rgba(107, 90, 221, 1));
+    opacity: 0.8;
+
 }
+
 .trainers a:before {
-	content: "TRAINERS";
     color: white;
     font-size: 30px;
-	opacity: 0;    
-	transition: opacity 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
+
 }
+
 .trainers a:hover:before {
-	display: inline-block;
-	width: 52px;
-	height: 52px;
-	position: absolute;
-	top: 50%;
-	left: 50%;  
-	margin: -26px 0 0 -26px;
-	z-index: 100;    
-	opacity: 1;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -26px 0 0 -26px;
+    z-index: 100;
+    opacity: 1;
+    content: "trainers";
+
 }
+
 .trainers img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
+
 /* .trainers img #woman:hover::after{
     content: "First Trainer";
     width: 150px;
@@ -398,9 +463,10 @@ header h2{
 } */
 .challenges {
     position: relative;
-    background-color: rgb(197, 95, 146);
-    height: 1666px;
+    height: 738px;
+    width: 100%;
 }
+
 .post3_text1 {
     width: 87%;
     height: 250px;
@@ -413,17 +479,20 @@ header h2{
     animation: challenges 1s 1;
     opacity: 1;
 }
+
 @keyframes challenges {
-    0%{
+    0% {
         margin-left: -100px;
         opacity: 0;
     }
 }
+
 .post3_text1 h1 {
     width: 550px;
     height: 58px;
     font-size: 48px;
 }
+
 .post3_text1 h6 {
     width: 580px;
     height: 44px;
@@ -433,7 +502,7 @@ header h2{
 }
 
 
-.post3_text1 button{
+.post3_text1 button {
     position: relative;
     left: 89%;
     bottom: 130px;
@@ -448,14 +517,17 @@ header h2{
     background-color: lightskyblue;
     animation: btn 1s 1;
     opacity: 1;
+    border: none;
 }
+
 @keyframes btn {
-    0%{
+    0% {
         margin-right: 150px;
         opacity: 0;
     }
 }
-.post3_text1 button:hover{
+
+.post3_text1 button:hover {
     margin-left: -15px;
     position: relative;
     width: 195px;
@@ -467,38 +539,92 @@ header h2{
     transition: 1s;
     background-color: #27cdd0e8;
     box-shadow: 0px 0px 19px 25px rgb(54 79 150 / 65%);
+    border: none;
+
 }
-.post3_block{
+
+.post3_block {
     display: inline-block;
     position: relative;
     width: 951px;
     height: 520px;
     left: -20px;
 }
-.post3_block .block1{
+
+.post3_block .block1 {
     position: relative;
     width: 495px;
     height: 511px;
     left: 15%;
     border: 1px solid black;
 }
-.post3_block .block2{
+.post3_block .block1 button {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post3_block .block1 button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
+
+.post3_block .block2 {
     position: relative;
     width: 495px;
     height: 511px;
     left: 76%;
-    bottom: 99%;
+    bottom: 98.25%;
     border: 1px solid black;
 }
-.post3_block .block3{
+.post3_block .block2 button {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post3_block .block2 button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
+
+.post3_block .block3 {
     position: relative;
     width: 495px;
     height: 511px;
     left: 138%;
-    bottom: 105vh;
+    bottom: 104.4vh;
     border: 1px solid black;
-
 }
+.post3_block .block3 button {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post3_block .block3 button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
+
 .block1 p {
     position: relative;
     font-size: 24px;
@@ -507,7 +633,8 @@ header h2{
     margin-left: 55px;
     color: black;
 }
-.block1 span h6{
+
+.block1 span h6 {
     color: black;
     position: relative;
     width: 200px;
@@ -518,6 +645,7 @@ header h2{
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
 }
+
 .block2 p {
     position: relative;
     font-size: 24px;
@@ -526,7 +654,8 @@ header h2{
     margin-left: 55px;
     color: black;
 }
-.block2 span h6{
+
+.block2 span h6 {
     color: black;
     position: relative;
     width: 200px;
@@ -537,6 +666,7 @@ header h2{
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
 }
+
 .block3 p {
     position: relative;
     font-size: 24px;
@@ -545,7 +675,8 @@ header h2{
     margin-left: 55px;
     color: black;
 }
-.block3 span h6{
+
+.block3 span h6 {
     color: black;
     position: relative;
     width: 200px;
@@ -556,88 +687,210 @@ header h2{
     font-size: 16px;
     font-family: roboto-thin, roboto, sans-serif;
 }
-#invite{
+
+.invite {
     position: relative;
-    width: 1664px;
-    border: 1px solid black;
     display: inline-block;
-    bottom: 86vh;
-    right: -6.44%;
+    width: 1664px;
     height: 670px;
+    bottom: -15vh;
+    right: -6.44%;
 }
-#invite .left{
+
+.invite .left {
     position: relative;
     width: 831px;
     height: inherit;
     text-align: center;
     left: 0px;
-    background-color: burlywood;
+    background-color: rgba(255, 156, 118,1);
 }
-#invite .left .invite_left_text{
+
+.invite .left .invite_left_text {
     position: inherit;
     text-align: left;
     top: 200px;
     left: 225px;
-    font-size:  24px;
+    font-size: 24px;
+    color: black;
 }
-#invite .right {
+
+.invite .right {
     width: 832px;
-    border: 1px solid black;
     left: 830px;
     height: 670px;
     position: relative;
     bottom: 100.1%;
+    background-color: rgba(255, 215, 199, 1);
 }
-.right .invite_right_text p{
-    font-size: 16px;
-    font-family: roboto-thin,roboto,sans-serif;
+
+.right .invite_right_text p {
+    font-size: 18px;
+    font-family: roboto-thin, roboto, sans-serif;
+    color: black;
 }
-.right .invite_right_text input{
+
+.right .invite_right_text input {
     height: 52px;
     margin-top: 10px;
     font-size: 20px;
     width: 225px;
 }
-.right .invite_right_text .first_name{
+
+.right .invite_right_text .first_name {
     position: relative;
     display: inline-block;
     width: 120px;
     height: 40px;
-    top: 145px;
+    top: 85px;
     left: 180px;
 }
+
 .right .invite_right_text .second_name {
     position: relative;
     display: inline-block;
     width: 120px;
     height: 40px;
-    top: 145px;
+    top: 85px;
     left: 350px;
 }
+
 .right .invite_right_text .email {
     position: relative;
     width: 120px;
     height: 40px;
-    top: 200px;
+    top: 140px;
     left: 180px;
 
 }
+
 .right .invite_right_text .Subject {
     position: relative;
     display: inline-block;
     width: 120px;
     height: 40px;
-    top: 160px;
+    top: 100px;
     left: 474px;
 }
+
 .right .invite_right_text .input_msg {
     position: relative;
     width: 467px;
     height: 135px;
-    top: 200px;
+    top: 140px;
     left: 180px;
-}    
-.right .invite_right_text .input_msg input{
+}
+
+.right .invite_right_text .input_msg input {
     height: 150px;
     width: 519px;
+}
+.right .invite_right_text button {
+    width: 100px;
+    height: 55px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    position: relative;
+    top: 220px;
+    left: 180px;
+}
+
+.right .invite_right_text button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
+
+footer {
+    width: 93%;
+    height: 300px;
+    background-color: rgb(129, 75, 231);
+    position: relative;
+    left: 66px;
+    bottom: 70px;
+}
+
+footer .left_side_footer {
+    width: 18%;
+    height: 100%;
+    background-color: rgb(133, 78, 195);
+    color: black;
+}
+
+footer .left_side_footer h5 {
+    text-decoration: none;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 110px;
+    padding-top: 24px;
+    font-size: 18px;
+}
+
+footer .left_side_footer h5 a {
+    color: black;
+    text-decoration: none;
+}
+footer .left_side_footer h5 a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+footer .center_side_footer {
+    width: 64%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 18%;
+}
+
+footer .center_side_footer .footer_input h5,
+h6 {
+    font-size: 22px;
+    color: black;
+}
+
+footer .center_side_footer .footer_input {
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+footer .center_side_footer .footer_input input {
+    height: 55px;
+}
+
+footer .center_side_footer .footer_input button {
+    width: 100px;
+    height: 55px;
+    border-radius: 28px;
+    background-color: black;
+    color: white;
+    transition: .5s;
+    border: none;
+}
+
+footer .center_side_footer .footer_input button:hover {
+    background-color: rgb(133, 78, 195);
+    transition: .5s;
+    border: none;
+}
+
+footer .right_side_footer .footer_links {
+    width: 18%;
+    height: 100%;
+    position: absolute;
+    top: 23%;
+    left: 85%;
+    padding-left: 56px;
+}
+
+footer .right_side_footer .footer_links .links {
+    margin-top: 10px;
 }

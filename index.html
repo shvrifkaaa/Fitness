@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../fitness/css/style.css">
-    <header style="position: fixed;"> 
+    <header id="header" style="position: fixed;"> 
             <div class="logo"> 
                 <img src="../fitness/img/avalogo.png" alt="1">
                 <h2>FitName</h2>
@@ -21,11 +22,10 @@
                 <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
             </div>
             <div class="login" style="position: fixed;">
-                <img src="../fitness/img/avalogo.png" style="width: 32px; border-radius: 16px; top: 8px; left: -2px;" alt="">
+                <img src="../fitness/img/avalogo.png" style="width: 32px; border-radius: 16px; top: -2.9px; left: -2px;" alt="">
                 <a href="" class="LogIn"> log in </a>
             </div>
     </header>
-
     <div class="post1">
         <div id="post1_text" data-aos="fade-left" data-aos-duration="3000">
             <h1>
@@ -42,7 +42,7 @@
         </div>
         <div class="post1_text1">
             <h1
-                style="text-align: center; color: black;position: relative; top: 50px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
+                style="text-align: center; color: black;position: relative; top: 40px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
                 H2FIT FEATURED <br /> CHALLENGES </h1>
             <div class="challenge1">
                 <img src="../fitness/img/post1_challenge1.png" style="width: 100%; height: 145px;" alt="">
@@ -60,17 +60,14 @@
                 </div>
                 <button> Join </button>
             </div>
-            <div class="vievAll_btn" style="text-align:center;">
-                <a href="####" style="text-decoration: none;"> <b
-                        style="position:relative; top:30px; font-size: 26px; color: black;">View All</b> </a>
-            </div>
+
+           <a href="####" id="viewAll_btn">
+                <b>View all</b>
+           </a>
         </div>
     </div>
 
-
-
     <div class="post2">
-
         <img data-aos="fade-up" data-aos-duration="3000" src="../fitness/img/img2.webp" alt="" class="img2" style="
     position: relative;
     width: 610px;
@@ -82,7 +79,6 @@
             <span id="text1"> ABOUT H2FIT </span>
             <span id="text2"><br /> Increase your fitness and strenght anywhere, anytime. </span>
 
-
             <span id="text3"> <br />
                 I'm a paragraph. Click here to add your own text and <br />
                 edit me. It’s easy. Just click “Edit Text” or double click <br />
@@ -93,18 +89,21 @@
             <button> <a href="####" style="text-decoration: none;"> Our Challenges </a> </button>
 
         </div>
+
         <div class="post2_text2">
             <h1>THE TRAINERS</h1>
             <p>I'm a paragraph. Click here to add your own text and edit me. I'm a great place <br />
                 for you to tell a story and let your users know a little more about you
             </p>
         </div>
+
         <div class="trainers">
             <a href="####">
-                <img src="../fitness/img/trainer1.webp" alt="woman" id="woman">
+                <img src="../fitness/img/trainer1.webp" alt="woman" class="woman">
             </a>
+
             <a href="####">
-                <img src="../fitness/img/trainer2.webp" alt="man" id="man">
+                <img src="../fitness/img/trainer2.webp" alt="man" class="man">
             </a>
         </div>
 
@@ -120,79 +119,123 @@
         </div>
         <div class="post3_block">
             <div class="block1">
-                <img src="../fitness/img/challenge1.png" style="height: 27.9vh;" alt="">
+                <img src="../fitness/img/challenge1.png" style="height: 27.8vh;" alt="">
                 <p>
                     <span> Mobility Challenge</span>
                 </p>
                 <span>
                     <h6>1 Week <br /> Free </h6>
                 </span>
+                <button> Join </button>
             </div>
             <div class="block2">
-                <img src="../fitness/img/challenge2.png" style="height: 27.9vh;" alt="">
+                <img src="../fitness/img/challenge2.png" style="height: 27.8vh;" alt="">
                 <p>
                     <span> Cardio Challenge</span>
                 </p>
                 <span>
                     <h6>1 Week • 1 Participant <br /> Free </h6>
                 </span>
+                <button> Join </button>
+
             </div>
             <div class="block3">
-                <img src="../fitness/img/challenge3.png" style="height: 27.83vh;" alt="">
+                <img src="../fitness/img/challenge3.png" style="height: 27.76vh;" alt="">
                 <p>
                     <span> Core 2 Challenge</span>
                 </p>
                 <span>
                     <h6>1 Week • 1 Participant <br /> Free </h6>
                 </span>
+                <button> Join </button>
+
             </div>
         </div>
-        <div id="invite_block">
-            <div id="invite">
-                <div class="left">
-                    <div class="invite_left_text">
-                        <h1>
-                            <b style="width: fit-content;line-height: 65px;">
-                                READY FOR </BR>
-                                THE ULTIMATE </BR>
-                                CHALLENGE?
-                            </b>
-                        </h1>
-                        <h4 style="font-size: 21px; margin-top: 32px; line-height: 33px;">
-                            For any questions about our program fill </br>
-                            out the form below and we'll be sure to </br>
-                            get back to you.
-                        </h4>
-                    </div>
+    </div>
+    <div class="invite">
+        <div class="left">
+            <div class="invite_left_text">
+                <h1>
+                    <b style="width: fit-content;line-height: 65px;">
+                        READY FOR </BR>
+                        THE ULTIMATE </BR>
+                        CHALLENGE?
+                    </b>
+                </h1>
+                <h4 style="font-size: 21px; margin-top: 32px; line-height: 33px;">
+                    For any questions about our program fill </br>
+                    out the form below and we'll be sure to </br>
+                    get back to you.
+                </h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="invite_right_text">
+                <div class="first_name">
+                    <p>First Name</p>
+                    <input type="text" size="20px">
                 </div>
-                <div class="right">
-                    <div class="invite_right_text">
-                        <div class="first_name">
-                            <p>First Name</p>
-                            <input type="text" size="20px">
-                        </div>
-                        <div class="second_name">
-                            <p>Second Name</p>
-                            <input type="text" size="20px">
-                        </div>
-                        <div class="email">
-                            <p>Email*</p>
-                            <input type="email" size="20px">
-                        </div>
-                        <div class="Subject">
-                            <p>Subject</p>
-                            <input type="text" size="20px">
-                        </div>
-                        <div class="input_msg">
-                            <p>Leave us a message...</p>
-                            <input type="text" size="62px">
-                        </div>
-                    </div>
+                <div class="second_name">
+                    <p>Second Name</p>
+                    <input type="text" size="20px">
+                </div>
+                <div class="email">
+                    <p>Email*</p>
+                    <input type="email" size="20px">
+                </div>
+                <div class="Subject">
+                    <p>Subject</p>
+                    <input type="text" size="20px">
+                </div>
+                <div class="input_msg">
+                    <p>Leave us a message...</p>
+                    <input type="text" size="62px">
+                </div>
+                <div class="Submit_btn">
+                    <button>Submit</button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <footer>
+        <div class="left_side_footer">
+            <h5>
+                <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
+                <a href="####"> Home</a> </br>
+                <a href="####"> About </a></br>
+                <a href="####"> Challenges </a> </br>
+                <a href="####"> Community</a> </br>
+                <a href="####"> Contact</a> </br>
+            </h5>
+        </div>
+        <div class="center_side_footer">
+            <div class="footer_input">
+                <h5 style="padding-bottom: 30px" ;><b> Fear of Missing Out? Join Our Newsletter </br>
+                        and Get Free workout Tips! </b>
+                </h5>
+                <h6 style="padding-bottom: 10px;">Email Address *</h6>
+                <input type="Email" size="45px">
+                <button> Join </button>
+            </div>
+        </div>
+
+        <div class="right_side_footer">
+            <div class="footer_links">
+                <a href="index.html"> <img
+                        src="https://cdn-icons.flaticon.com/png/512/519/premium/519332.png?token=exp=1636704872~hmac=ea0509f8c432446b95b7b11c7294c6ad"
+                        style="width: 100px; height: 100px; " alt=""> </a>
+                <div class="links">
+                    <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.facebook.com"> <img src="./img/link_facebook.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.youtube.com"> <img src="./img/link_Youtube.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     
     
@@ -210,7 +253,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init() </script>
     <script src="../fitness/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'/>
     <script src="../fitness/js/waypoint.js"></script>
 </body>
