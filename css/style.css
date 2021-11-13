@@ -263,19 +263,28 @@ body {
     margin-left: 10px;
     border: none;
 }
-
-.post1_text1 #vievAll_btn {
-    width: 100%;
-    height: 110px;
-    background-color: orange;
-    bottom: 0px;
-}
-.post1_text1 #viewAll_btn b{
-    font-size: 30px;
-    color: black;
+.post1_text1 .view_all_btn a{
     text-decoration: none;
 }
-
+.post1_text1 .view_all_btn a .btn_block{
+    color: black;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 156, 118);
+    transition: 0.4s;
+    margin-top: 170px;
+}
+.post1_text1 .view_all_btn a .btn_block:hover{
+    background-color: rgb(35, 34, 126);
+    color: white;
+    transition: .4s;
+}
+.post1_text1 .view_all_btn .btn_block b{
+    font-size: 27px;
+    position: relative;
+    top: 33px;
+    left: 120px;
+}
 .post2 {
     background-repeat: no-repeat;
     background-size: cover;
@@ -807,7 +816,6 @@ body {
 footer {
     width: 93%;
     height: 300px;
-    background-color: rgb(129, 75, 231);
     position: relative;
     left: 66px;
     bottom: 70px;
@@ -816,8 +824,9 @@ footer {
 footer .left_side_footer {
     width: 18%;
     height: 100%;
-    background-color: rgb(133, 78, 195);
     color: black;
+    border: 1px solid black
+    ;
 }
 
 footer .left_side_footer h5 {
@@ -881,14 +890,15 @@ footer .center_side_footer .footer_input button:hover {
     transition: .5s;
     border: none;
 }
-
 footer .right_side_footer .footer_links {
     width: 18%;
     height: 100%;
     position: absolute;
-    top: 23%;
-    left: 85%;
-    padding-left: 56px;
+    top: 0%;
+    left: 82%;
+    padding-left: 108px;
+    padding-top: 4%;
+    background-color: rgb(133, 78, 195);
 }
 
 footer .right_side_footer .footer_links .links {
