@@ -1,0 +1,88 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto-thin, roboto, sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+}
+
+#header {
+    position: fixed;
+    width: 120em;
+    height: 70px;
+    background-color: rgb(255, 156, 118);
+    left: 0%;
+    top: 0px;
+    z-index: 1;
+    color: black;
+}
+
+#header img {
+    position: relative;
+    border-radius: 10px;
+    width: 40px;
+    top: 13px;
+    left: 20px;
+
+}
+
+#header h2 {
+    position: relative;
+    bottom: 25px;
+    left: 80px;
+    color: black;
+}
+
+.rightbar {
+    position: fixed;
+    left: 56%;
+    top: 14px;
+    text-align: center;
+    font-size: 28px;
+    word-spacing: 23px;
+}
+
+.rightbar a {
+    scroll-behavior: smooth;
+    color: black;
+
+}
+
+.login {
+    position: fixed;
+    top: 1.1%;
+    right: 3%;
+    word-spacing: 31px;
+    font-size: 24px;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 28px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: darkgrey;
+}
+.post1{
+    width: 100%;
+    height: 92.9vh;
+    background-color: green;
+    position: relative;
+    top: 70px;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../img/challenges_post1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.post1 .post1_text{
+    text-align: left;
+    width: fit-content;
+    padding-top: 150px;
+    padding-left: 50px;
+    color: white;
+}
