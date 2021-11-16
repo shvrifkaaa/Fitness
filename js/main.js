@@ -2,7 +2,6 @@ $(document).ready(function () { // Ждём загрузки страницы //
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
             anim();
-            console.log('hello')
         }
     });
 });

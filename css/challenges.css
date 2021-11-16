@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(190, 100, 100);
+    background-color: #fffdde;
     height: auto;
     width: auto;
 }
@@ -105,9 +105,25 @@ body {
     border: 1px solid #FFF3e4;
 }
 .post2 .line1 .challenge1 .challenge1_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
+}
+.post2 .line1 .challenge1 .challenge1_text {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post2 .line1 .challenge1 .challenge1_text button {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 .post2 .line1 .challenge2{
     width: 435px;
@@ -115,9 +131,25 @@ body {
     border: 1px solid #FFF3e4;
 }
 .post2 .line1 .challenge2 .challenge2_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
+}
+.post2 .line1 .challenge2 .challenge2_text {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post2 .line1 .challenge2 .challenge2_text button {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 .post2 .line1 .challenge3{
     width: 435px;
@@ -125,9 +157,25 @@ body {
     border: 1px solid #FFF3e4;
 }
 .post2 .line1 .challenge3 .challenge3_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
+}
+.post2 .line1 .challenge3 .challenge3_text {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post2 .line1 .challenge3 .challenge3_text button {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 .post2 .line1 .challenge4{
     width: 435px;
@@ -135,9 +183,25 @@ body {
     border: 1px solid #FFF3e4;
 }
 .post2 .line1 .challenge4 .challenge4_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
+}
+.post2 .line1 .challenge4 .challenge4_text {
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+    margin-left: 56px;
+}
+
+.post2 .line1 .challenge4 .challenge4_text button {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 .post2 .line2{
     display: flex;
@@ -152,9 +216,9 @@ body {
     border: 1px solid black;
 }
 .post2 .line2 .challenge5 .challenge5_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
 }
 .post2 .line2 .challenge6{
     width: 435px;
@@ -162,9 +226,9 @@ body {
     border: 1px solid black;
 }
 .post2 .line2 .challenge6 .challenge6_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
 }
 .post2 .line2 .challenge7{
     width: 435px;
@@ -172,9 +236,9 @@ body {
     border: 1px solid black;
 }
 .post2 .line2 .challenge7 .challenge7_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
 }
 .post2 .line2 .challenge8{
     width: 435px;
@@ -182,9 +246,9 @@ body {
     height: 478px;
 }
 .post2 .line2 .challenge8 .challenge8_text{
-    margin-top: 50%;
-    border: 1px solid black;
     height: 49.5%;
+    padding-top: 10%;
+    margin-left: 30px;
 }
 footer {
     width: 93%;
@@ -193,14 +257,14 @@ footer {
     left: 66px;
     bottom: -62px;
     margin-bottom: 6%;
+    border: 1px solid black;
 }
 
 footer .left_side_footer {
     width: 18%;
     height: 100%;
     color: black;
-    border: 1px solid black
-    ;
+    border-right: 1px solid black;
 }
 
 footer .left_side_footer h5 {
@@ -227,7 +291,6 @@ footer .left_side_footer h5 a:hover {
 footer .center_side_footer {
     width: 64%;
     height: 100%;
-    background-color: white;
     position: absolute;
     bottom: 0%;
     left: 18%;
@@ -273,6 +336,7 @@ footer .right_side_footer .footer_links {
     padding-left: 108px;
     padding-top: 4%;
     background-color: rgb(133, 78, 195);
+    border-left: 1px solid black;
 }
 
 footer .right_side_footer .footer_links .links {
