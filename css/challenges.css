@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #fffdde;
+    background-color: rgb(249, 230, 220);
     height: auto;
     width: auto;
 }
@@ -89,27 +89,25 @@ body {
 .post2{
     width: 100%;
     height:fit-content;
-    border: 1px solid black;
-    background-color: rgb(204, 182, 57);
 }
 .post2 .line1{
     display: flex;
     justify-content: space-around;
     height: fit-content;
     margin: 140px 30px 0 30px;
-    background-color: green;
+    color: black;
 }
 .post2 .line1 .challenge1{
     width: 435px;
     height: 478px;
-    border: 1px solid #FFF3e4;
+    border: 1px solid black;
 }
 .post2 .line1 .challenge1 .challenge1_text{
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge1 .challenge1_text {
+.post2 .line1 .challenge1 .challenge1_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -117,10 +115,9 @@ body {
     color: white;
     transition: .5s;
     border: none;
-    margin-left: 56px;
 }
 
-.post2 .line1 .challenge1 .challenge1_text button {
+.post2 .line1 .challenge1 .challenge1_text button:hover {
     background-color: black;
     transition: .5s;
     border: none;
@@ -128,14 +125,14 @@ body {
 .post2 .line1 .challenge2{
     width: 435px;
     height: 478px;
-    border: 1px solid #FFF3e4;
+    border: 1px solid black;
 }
 .post2 .line1 .challenge2 .challenge2_text{
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge2 .challenge2_text {
+.post2 .line1 .challenge2 .challenge2_text button{
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -143,10 +140,9 @@ body {
     color: white;
     transition: .5s;
     border: none;
-    margin-left: 56px;
 }
 
-.post2 .line1 .challenge2 .challenge2_text button {
+.post2 .line1 .challenge2 .challenge2_text button:hover {
     background-color: black;
     transition: .5s;
     border: none;
@@ -154,14 +150,14 @@ body {
 .post2 .line1 .challenge3{
     width: 435px;
     height: 478px;
-    border: 1px solid #FFF3e4;
+    border: 1px solid black;
 }
 .post2 .line1 .challenge3 .challenge3_text{
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge3 .challenge3_text {
+.post2 .line1 .challenge3 .challenge3_text button{
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -169,10 +165,9 @@ body {
     color: white;
     transition: .5s;
     border: none;
-    margin-left: 56px;
 }
 
-.post2 .line1 .challenge3 .challenge3_text button {
+.post2 .line1 .challenge3 .challenge3_text button:hover {
     background-color: black;
     transition: .5s;
     border: none;
@@ -180,14 +175,14 @@ body {
 .post2 .line1 .challenge4{
     width: 435px;
     height: 478px;
-    border: 1px solid #FFF3e4;
+    border: 1px solid black;
 }
 .post2 .line1 .challenge4 .challenge4_text{
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge4 .challenge4_text {
+.post2 .line1 .challenge4 .challenge4_text button{
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -195,10 +190,9 @@ body {
     color: white;
     transition: .5s;
     border: none;
-    margin-left: 56px;
 }
 
-.post2 .line1 .challenge4 .challenge4_text button {
+.post2 .line1 .challenge4 .challenge4_text button:hover {
     background-color: black;
     transition: .5s;
     border: none;
@@ -208,7 +202,7 @@ body {
     justify-content: space-around;
     height: fit-content;
     margin: 25px 30px 0 30px;
-    background-color: rgb(43, 156, 43);
+    color: black;
 }
 .post2 .line2 .challenge5{
     width: 435px;
@@ -220,6 +214,21 @@ body {
     padding-top: 10%;
     margin-left: 30px;
 }
+.post2 .line2 .challenge5 .challenge5_text button{
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+}
+
+.post2 .line2 .challenge5 .challenge5_text button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
 .post2 .line2 .challenge6{
     width: 435px;
     height: 478px;
@@ -229,6 +238,21 @@ body {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
+}
+.post2 .line2 .challenge6 .challenge6_text button{
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+}
+
+.post2 .line2 .challenge6 .challenge6_text button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 .post2 .line2 .challenge7{
     width: 435px;
@@ -240,6 +264,21 @@ body {
     padding-top: 10%;
     margin-left: 30px;
 }
+.post2 .line2 .challenge7 .challenge7_text button{
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+}
+
+.post2 .line2 .challenge7 .challenge7_text button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
+}
 .post2 .line2 .challenge8{
     width: 435px;
     border: 1px solid black;
@@ -249,6 +288,21 @@ body {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
+}
+.post2 .line2 .challenge8 .challenge8_text button{
+    width: 125px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: rgb(129, 75, 231);
+    color: white;
+    transition: .5s;
+    border: none;
+}
+
+.post2 .line2 .challenge8 .challenge8_text button:hover {
+    background-color: black;
+    transition: .5s;
+    border: none;
 }
 footer {
     width: 93%;
