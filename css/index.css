@@ -15,7 +15,7 @@ body {
 
 #header {
     position: fixed;
-    width: 120em;
+    width: 100%;
     height: 70px;
     background-color: rgb(255, 156, 118);
     left: 0%;
@@ -81,6 +81,7 @@ body {
     /* position: absolute; */
     margin-top: 62px;
     margin-left: -20px;
+    background-attachment: fixed;
 }
 
 #post1_text {
@@ -304,7 +305,7 @@ body {
     opacity: 1;
 }
 
-@keyframes post2text {
+/* @keyframes post2text {
     0% {
         opacity: 0;
     }
@@ -313,7 +314,7 @@ body {
         margin-left: -80px;
         opacity: 0;
     }
-}
+} */
 
 .post2_text #text1 {
     font-size: 48px;
@@ -718,7 +719,7 @@ body {
 .invite .left .invite_left_text {
     position: inherit;
     text-align: left;
-    top: 200px;
+    top: 120px;
     left: 225px;
     font-size: 24px;
     color: black;

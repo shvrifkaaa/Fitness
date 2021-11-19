@@ -9,11 +9,11 @@
 </head>
 <body>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../fitness/css/index.css">
-    <header id="header" style="position: fixed;"> 
-            <div class="logo"> 
-                <img src="../fitness/img/avalogo.png" alt="1">
-                <h2>FitName</h2>
+    <link rel="stylesheet" href="./css/index.css">
+    <header id="header" style="position: fixed;">
+            <div class="logo">
+                <img src="./img/avalogo.png" alt="1">
+                <h2 > <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
             </div>
             <div class="rightbar">
                 <a href="####" style="text-decoration: none;" id="btn_about">About</a>
@@ -22,7 +22,7 @@
                 <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
             </div>
             <div class="login" style="position: fixed;">
-                <img src="../fitness/img/avalogo.png" style="width: 32px; border-radius: 16px; top: -2.9px; left: -2px;" alt="">
+                <img src="./img/avalogo.png" style="width: 32px; border-radius: 16px; top: -2.9px; left: -2px;" alt="">
                 <a href="" class="LogIn"> log in </a>
             </div>
     </header>
@@ -45,7 +45,7 @@
                 style="text-align: center; color: black;position: relative; top: 40px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
                 H2FIT FEATURED <br /> CHALLENGES </h1>
             <div class="challenge1">
-                <img src="../fitness/img/post1_challenge1.png" style="width: 100%; height: 145px;" alt="">
+                <img src="./img/post1_challenge1.png" style="width: 100%; height: 145px;" alt="">
                 <div class="text">
                     <h1><b>Core Challenge </b> </h1>
                     <p style="margin-top: 9px;">1 Week 3 Participants</p>
@@ -53,7 +53,7 @@
                 <button> Join</button>
             </div>
             <div class="challenge2">
-                <img src="../fitness/img/post1_challenge2.png" style="width: 100%; height: 145px;" alt="">
+                <img src="./img/post1_challenge2.png" style="width: 100%; height: 145px;" alt="">
                 <div class="text">
                     <h1> <b>Strenght Challenge</b></h1>
                     <p style="margin-top: 14px;">1 Week 1 Participant</p>
@@ -71,17 +71,16 @@
     </div>
 
     <div class="post2">
-        <img data-aos="fade-up" data-aos-duration="3000" src="../fitness/img/img2.webp" alt="" class="img2" style="
+        <img data-aos="fade-up" data-aos-duration="3000" src="./img/img2.webp" alt="" class="img2" style="
     position: relative;
     width: 610px;
     height: 650px;
     left: 120px;
     margin-top: 5%;">
 
-        <div class="post2_text">
+        <div class="post2_text" data-aos="fade-left" data-aos-duration="3000">
             <span id="text1"> ABOUT H2FIT </span>
             <span id="text2"><br /> Increase your fitness and strenght anywhere, anytime. </span>
-
             <span id="text3"> <br />
                 I'm a paragraph. Click here to add your own text and <br />
                 edit me. It’s easy. Just click “Edit Text” or double click <br />
@@ -102,11 +101,11 @@
 
         <div class="trainers">
             <a href="####">
-                <img src="../fitness/img/trainer1.webp" alt="woman" class="woman">
+                <img src="./img/trainer1.webp" alt="woman" class="woman">
             </a>
 
             <a href="####">
-                <img src="../fitness/img/trainer2.webp" alt="man" class="man">
+                <img src="./img/trainer2.webp" alt="man" class="man">
             </a>
         </div>
 
@@ -122,7 +121,7 @@
         </div>
         <div class="post3_block">
             <div class="block1">
-                <img src="../fitness/img/challenge1.png" style="height: 27.8vh;" alt="">
+                <img src="./img/challenge1.png" style="height: 27.8vh;" alt="">
                 <p>
                     <span> Mobility Challenge</span>
                 </p>
@@ -132,7 +131,7 @@
                 <button> Join </button>
             </div>
             <div class="block2">
-                <img src="../fitness/img/challenge2.png" style="height: 27.8vh;" alt="">
+                <img src="./img/challenge2.png" style="height: 27.8vh;" alt="">
                 <p>
                     <span> Cardio Challenge</span>
                 </p>
@@ -143,7 +142,7 @@
 
             </div>
             <div class="block3">
-                <img src="../fitness/img/challenge3.png" style="height: 27.76vh;" alt="">
+                <img src="./img/challenge3.png" style="height: 27.76vh;" alt="">
                 <p>
                     <span> Core 2 Challenge</span>
                 </p>
@@ -158,6 +157,7 @@
     <div class="invite">
         <div class="left">
             <div class="invite_left_text">
+                <img src="./img/invite_img.png" style="width: 70px; height: 70px;" alt="">
                 <h1>
                     <b style="width: fit-content;line-height: 65px;">
                         READY FOR </BR>
@@ -174,29 +174,31 @@
         </div>
         <div class="right">
             <div class="invite_right_text">
-                <div class="first_name">
-                    <p>First Name</p>
-                    <input type="text" size="20px">
-                </div>
-                <div class="second_name">
-                    <p>Second Name</p>
-                    <input type="text" size="20px">
-                </div>
-                <div class="email">
-                    <p>Email*</p>
-                    <input type="email" size="20px">
-                </div>
-                <div class="Subject">
-                    <p>Subject</p>
-                    <input type="text" size="20px">
-                </div>
-                <div class="input_msg">
-                    <p>Leave us a message...</p>
-                    <input type="text" size="62px">
-                </div>
-                <div class="Submit_btn">
-                    <button>Submit</button>
-                </div>
+                <form action="">
+                    <div class="first_name">
+                        <p>First Name</p>
+                        <input type="text" size="20px">
+                    </div>
+                    <div class="second_name">
+                        <p>Second Name</p>
+                        <input type="text" size="20px">
+                    </div>
+                    <div class="email">
+                        <p>Email*</p>
+                        <input type="email" size="20px">
+                    </div>
+                    <div class="Subject">
+                        <p>Subject</p>
+                        <input type="text" size="20px">
+                    </div>
+                    <div class="input_msg">
+                        <p>Leave us a message...</p>
+                        <input type="text" size="62px">
+                    </div>
+                    <div class="Submit_btn">
+                        <button>Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -223,9 +225,9 @@
     </div>
     <div class="right_side_footer">
         <div class="footer_links">
-            <a href="index.html"> <img
-                    src="https://cdn-icons.flaticon.com/png/512/519/premium/519332.png?token=exp=1636704872~hmac=ea0509f8c432446b95b7b11c7294c6ad"
-                    style="width: 100px; height: 100px; " alt=""> </a>
+            <a href="index.html">
+                <img src="./img/footer_img2.png"
+                    style="width: 100px; height: 100px;" alt=""> </a>
             <div class="links">
                 <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
                         style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
@@ -237,12 +239,12 @@
         </div>
     </div>
 </footer>
-    
-    
 
-    
-    
-    
+
+
+
+
+
 
 
 
@@ -252,8 +254,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init() </script>
-    <script src="../fitness/js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'/>
-    <script src="../fitness/js/waypoint.js"></script>
+    <script src="./js/waypoint.js"></script>
 </body>
 </html>
