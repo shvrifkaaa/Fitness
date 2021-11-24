@@ -27,17 +27,17 @@ body {
 #header img {
     position: relative;
     border-radius: 10px;
-    width: 40px;
-    top: 13px;
-    left: 20px;
-
+    width: 74px;
+    top: 18px;
+    left: 40px;
 }
 
 #header h2 {
     position: relative;
     bottom: 25px;
-    left: 80px;
+    left: 120px;
     color: black;
+    font-size: 3em;
 }
 
 .rightbar {
@@ -68,8 +68,139 @@ body {
     font-size: 28px;
     border: 1px solid;
     border-radius: 25px;
-    background-color: darkgrey;
+    background-color: #e9b047;
 }
+
+.login input[type=text],.login input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  .login input[type=text]:focus,.login input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Установите стиль для всех кнопок */
+  .login button {
+    background-color: #7a74bd;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    opacity: 0.9;
+    height: 40px;
+    border-radius: 20px;
+}
+  
+  .login button:hover {
+    opacity:1;
+  }
+  
+  /* Дополнительные стили для кнопки Отмена */
+  .login .cancelbtn {
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .login .cancelbtn,.login .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .login .container {
+    padding: 16px;
+  }
+  
+  /* Модальный (фон) */
+  .login .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    padding-top: 50px;
+  }
+  
+  /* Модальное содержание/бокс */
+  .login .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
+    border: 1px solid #888;
+    width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  
+  /* Style the horizontal ruler */
+  .login hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* Кнопка закрытия (x) */
+  .login .close {
+    position: absolute;
+    right: 580px;
+    top: 144px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+    opacity: .5;
+  }
+  
+  .login  .close:hover,
+  .login .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .login .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .post1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img1.webp);

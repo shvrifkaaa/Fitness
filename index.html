@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <header id="header" style="position: fixed;">
             <div class="logo">
-                <img src="./img/avalogo.png" alt="1">
+                <img src="./img/logo.png" alt="">
                 <h2 > <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
             </div>
             <div class="rightbar">
@@ -22,8 +22,32 @@
                 <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
             </div>
             <div class="login" style="position: fixed;">
-                <img src="./img/avalogo.png" style="width: 32px; border-radius: 16px; top: -2.9px; left: -2px;" alt="">
-                <a href="" class="LogIn"> log in </a>
+
+                <button class="login" onclick="document.getElementById('id01').style.display='block'" >Вход</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+  <form class="modal-content" action="../action_page.php">
+    <div class="container">
+      <h1>Вход</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder=" Ведите Email" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+        <button type="submit" class="signupbtn">Вход</button>
+      </div>
+        <a href="./regPage.html"> Регистрация </a>
+</div>
+  </form>
             </div>
     </header>
     <div class="post1">
@@ -61,7 +85,7 @@
                 <button> Join </button>
             </div>
             <div class="view_all_btn">
-                <a href="####">
+                <a href="./challenges.html">
                     <div class="btn_block">
                         <b> View All </b>
                     </div>

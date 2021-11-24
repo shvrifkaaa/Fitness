@@ -14,3 +14,12 @@ var anim_style = {
     "transition": "0.5s",
     "box-shadow": "0 0 20px 0 rgba(115,98,223,1)"
 } // АНИМАЦИЯ ЦВЕТА ШАПКИ ПРИ СКРОЛЛЕ
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

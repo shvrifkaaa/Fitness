@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/regPage.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <header id="header" style="position: fixed;">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+            <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
+        </div>
+        <div class="rightbar">
+            <a href="./index.html" style="text-decoration: none;" id="btn_about">About</a>
+            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
+            <a href="./index.html" "style="text-decoration: none;" id="btn_contact">Contact</a>
+        </div>
+        <div class="login" style="position: fixed;">
+
+            <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="../action_page.php">
+                    <div class="container">
+                        <h1>Вход</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder=" Ведите Email" name="email" required>
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Запомнить меня
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отменить</button>
+                            <button type="submit" class="signupbtn">Вход</button>
+                        </div>
+                        <a href="./regPage.html"> Регистрация </a>
+                    </div>
+                </form>
+            </div>
+    </header>
+
+    <div class="container-form">
+        <form action="">
+            <p>
+                <label for="name"> Имя:</label><br>
+                <input type="Name" class="name" size="30px"> <br>
+
+                <label for="email"> Электронная почта:</label><br>
+                <input type="Email" class="email" size="30px"> <br>
+
+                <input type="radio" name="Sex" id="Male" placeholder="Мужчина"> Мужчина <br>
+                <input type="radio" name="Sex" id="Female" placeholder="Женщина"> Женщина <br>
+
+                <label for="date"> Дата рождения:</label> <br>
+                <input type="date" class="date" size="30px"> <br>
+
+                <label for="password"> Пароль:</label> <br>
+                <input type="password" class="password" size="30px"> <br>
+
+
+                <button class="btn_click"> Зарегистрироваться</button>
+            </p>
+        </form>
+    </div>
+    <script src="./js/regForm.js"></script>
+</body>
+</html>

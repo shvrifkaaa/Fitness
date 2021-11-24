@@ -26,17 +26,17 @@ body {
 #header img {
     position: relative;
     border-radius: 10px;
-    width: 40px;
-    top: 13px;
-    left: 20px;
-
+    width: 74px;
+    top: 18px;
+    left: 40px;
 }
 
 #header h2 {
     position: relative;
     bottom: 25px;
-    left: 80px;
+    left: 120px;
     color: black;
+    font-size: 3em;
 }
 
 .rightbar {
