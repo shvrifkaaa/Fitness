@@ -1036,3 +1036,51 @@ footer .right_side_footer .footer_links {
 footer .right_side_footer .footer_links .links {
     margin-top: 10px;
 }
+@media(min-width: 768px) and (max-width:1400px) {
+    header {
+        width: 100%;
+    }
+
+    header .rightbar {
+        width: 50%;
+        left: 25%;
+        word-spacing: 136px;
+    }
+
+    .post1 .post1_text {
+        width: 20%;
+    }
+
+    .post1 .post1_text1 {
+        left: 215%;
+
+    }
+
+    header .login {
+        top: 7px;
+    }
+
+    .post3_block .block1 img {
+        width: 100%;
+    }
+
+    .post3_block .block2 img {
+        width: 100%;
+    }
+
+    .post3_block .block3 img {
+        width: 100%;
+    }
+
+    .post3_block .block3 {
+        margin-top: 47px;
+    }
+
+    .invite {
+        margin-left: 77px;
+    }
+
+    footer {
+        width: 175vh;
+    }
+}

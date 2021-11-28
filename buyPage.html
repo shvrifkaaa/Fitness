@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/buyPage.css">
+</head>
+<body>
+    <header id="header" style="position: fixed;">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+            <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
+        </div>
+        <div class="rightbar">
+            <a href="####" style="text-decoration: none;" id="btn_about">About</a>
+            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
+            <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
+        </div>
+        <div class="login" style="position: fixed;">
+
+            <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="../action_page.php">
+                    <div class="container">
+                        <h1>Вход</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder=" Ведите Email" name="email" required>
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Запомнить меня
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отменить</button>
+                            <button type="submit" class="signupbtn">Вход</button>
+                        </div>
+                        <a href="./regPage.html"> Регистрация </a>
+                    </div>
+                </form>
+            </div>
+    </header>
+    <div class="post1">
+        <div class="bg-color-block">
+            <div class="text-block">
+                <h1 style="font-size: 68px; font-family: roboto-bold;"><b> Core Challenge </b></h1>
+                <h3 style="position: relative; top: 20px; left: 27px;">1 <br /> Week </h3>
+                <p
+                    style="width: 2px;height: 100px;position: relative; border: 1px solid black; bottom: 95px;left: 46%;">
+                </p>
+                <h3 style="position: relative; bottom: 193px; left: 57%; ">6 <br /> Participants</h3>
+                <a style="text-decoration: none; color: white;" href="####"> <button> Join </button></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="post2">
+        <div class="post2-img">
+            <img src="./img/challenge_challenge1.png" alt="">
+        </div>
+        <div class="post2-text">
+            <h2> <b> About</b></h2>
+            <p style="padding-top: 35px; font-size: 17px;"> Describe your service here. What makes it great? Use short catchy text to tell people what you <br />
+                offer, and the benefits they will receive. A great description gets readers in the mood, and makes
+                <br />
+                them more likely to go ahead and join.
+            </p>
+            <p style="margin: 45px 0 75px 0;"> "Your login"</p>
+            <h1> Pick Your Start Date</h1>
+            <div class="Date">
+                <p style="margin: 70px 0 90px 0;">20.01.2021</p>         <!--Дата начала курса тренировок-->
+            </div>
+            <h2 style="margin: 0 0 40px 0;"><b>Price</b></h2>
+            <p style="margin: 0 0 50px 0;">   Free   </p>             <!--Цена тут-->  
+            <a style="text-decoration: none; color: white;" href="####"> <button> Join </button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left_side_footer">
+            <h5>
+                <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
+                <a href="####" id="footer_left_home_btn"> Home</a> </br>
+                <a href="####" id="footer_left_about_btn"> About </a></br>
+                <a href="####"> Challenges </a> </br>
+                <a href="####"> Community</a> </br>
+                <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
+            </h5>
+        </div>
+        <div class="center_side_footer">
+            <div class="footer_input">
+                <h5 style="padding-bottom: 30px" ;><b> Fear of Missing Out? Join Our Newsletter </br>
+                        and Get Free workout Tips! </b>
+                </h5>
+                <h6 style="padding-bottom: 10px;">Email Address *</h6>
+                <input type="Email" size="45px">
+                <button> Join </button>
+            </div>
+        </div>
+        <div class="right_side_footer">
+            <div class="footer_links">
+                <a href="index.html">
+                    <img src="./img/footer_img2.png" style="width: 100px; height: 100px;" alt=""> </a>
+                <div class="links">
+                    <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.facebook.com"> <img src="./img/link_facebook.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.youtube.com"> <img src="./img/link_Youtube.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/buyPage.js"></script>
+
+</body>
+</html>

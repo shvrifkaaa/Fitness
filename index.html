@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,51 @@
     <title>Fitness</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+
 <body>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <header id="header" style="position: fixed;">
-            <div class="logo">
-                <img src="./img/logo.png" alt="">
-                <h2 > <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
-            </div>
-            <div class="rightbar">
-                <a href="####" style="text-decoration: none;" id="btn_about">About</a>
-                <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
-                <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
-                <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
-            </div>
-            <div class="login" style="position: fixed;">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+            <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
+        </div>
+        <div class="rightbar">
+            <a href="####" style="text-decoration: none;" id="btn_about">About</a>
+            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
+            <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
+        </div>
+        <div class="login" style="position: fixed;">
 
-                <button class="login" onclick="document.getElementById('id01').style.display='block'" >Вход</button>
+            <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
-  <form class="modal-content" action="../action_page.php">
-    <div class="container">
-      <h1>Вход</h1>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder=" Ведите Email" name="email" required>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="../action_page.php">
+                    <div class="container">
+                        <h1>Вход</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder=" Ведите Email" name="email" required>
 
-      <label for="psw"><b>Пароль</b></label>
-      <input type="password" placeholder=" Ведите пароль" name="psw" required>
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder=" Ведите пароль" name="psw" required>
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
-      </label>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Запомнить меня
+                        </label>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
-        <button type="submit" class="signupbtn">Вход</button>
-      </div>
-        <a href="./regPage.html"> Регистрация </a>
-</div>
-  </form>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отменить</button>
+                            <button type="submit" class="signupbtn">Вход</button>
+                        </div>
+                        <a href="./regPage.html"> Регистрация </a>
+                    </div>
+                </form>
             </div>
     </header>
     <div class="post1">
@@ -65,16 +70,16 @@
             <button> <a href="####" style="text-decoration: none;" id="Ahref"> View Challenges </a> </button>
         </div>
         <div class="post1_text1">
-            <h1
-                style="text-align: center; color: black;position: relative; top: 40px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
-                H2FIT FEATURED <br /> CHALLENGES </h1>
+            <h1 style="text-align: center; color: black;position: relative; top: 40px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
+                H2FIT FEATURED <br />
+                CHALLENGES </h1>
             <div class="challenge1">
                 <img src="./img/post1_challenge1.png" style="width: 100%; height: 145px;" alt="">
                 <div class="text">
                     <h1><b>Core Challenge </b> </h1>
                     <p style="margin-top: 9px;">1 Week 3 Participants</p>
                 </div>
-                <button> Join</button>
+            <a style="text-decoration: none; color: white;" href="./buyPage.html">   <button> Join </button></a> 
             </div>
             <div class="challenge2">
                 <img src="./img/post1_challenge2.png" style="width: 100%; height: 145px;" alt="">
@@ -226,60 +231,51 @@
             </div>
         </div>
     </div>
-<footer>
-    <div class="left_side_footer">
-        <h5>
-            <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
-            <a href="####" id="footer_left_home_btn"> Home</a> </br>
-            <a href="####" id="footer_left_about_btn"> About </a></br>
-            <a href="####"> Challenges </a> </br>
-            <a href="####"> Community</a> </br>
-            <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
-        </h5>
-    </div>
-    <div class="center_side_footer">
-        <div class="footer_input">
-            <h5 style="padding-bottom: 30px" ;><b> Fear of Missing Out? Join Our Newsletter </br>
-                    and Get Free workout Tips! </b>
+    <footer>
+        <div class="left_side_footer">
+            <h5>
+                <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
+                <a href="####" id="footer_left_home_btn"> Home</a> </br>
+                <a href="####" id="footer_left_about_btn"> About </a></br>
+                <a href="####"> Challenges </a> </br>
+                <a href="####"> Community</a> </br>
+                <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
             </h5>
-            <h6 style="padding-bottom: 10px;">Email Address *</h6>
-            <input type="Email" size="45px">
-            <button> Join </button>
         </div>
-    </div>
-    <div class="right_side_footer">
-        <div class="footer_links">
-            <a href="index.html">
-                <img src="./img/footer_img2.png"
-                    style="width: 100px; height: 100px;" alt=""> </a>
-            <div class="links">
-                <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
-                        style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
-                <a href="https://www.facebook.com"> <img src="./img/link_facebook.png"
-                        style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
-                <a href="https://www.youtube.com"> <img src="./img/link_Youtube.png"
-                        style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+        <div class="center_side_footer">
+            <div class="footer_input">
+                <h5 style="padding-bottom: 30px" ;><b> Fear of Missing Out? Join Our Newsletter </br>
+                        and Get Free workout Tips! </b>
+                </h5>
+                <h6 style="padding-bottom: 10px;">Email Address *</h6>
+                <input type="Email" size="45px">
+                <button> Join </button>
             </div>
         </div>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
+        <div class="right_side_footer">
+            <div class="footer_links">
+                <a href="index.html">
+                    <img src="./img/footer_img2.png" style="width: 100px; height: 100px;" alt=""> </a>
+                <div class="links">
+                    <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.facebook.com"> <img src="./img/link_facebook.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                    <a href="https://www.youtube.com"> <img src="./img/link_Youtube.png"
+                            style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init() </script>
+    <script>
+        AOS.init()
+    </script>
     <script src="./js/main.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'/>
     <script src="./js/waypoint.js"></script>
 </body>
+
 </html>
