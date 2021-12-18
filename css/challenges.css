@@ -1,4 +1,5 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body {
 
 #header {
     position: fixed;
-    width: 120em;
+    width: 100%;
     height: 70px;
     background-color: rgb(255, 156, 118);
     left: 0%;
@@ -42,7 +43,7 @@ body {
 .rightbar {
     position: fixed;
     left: 56%;
-    top: 14px;
+    top: 19px;
     text-align: center;
     font-size: 28px;
     word-spacing: 23px;
@@ -67,47 +68,174 @@ body {
     font-size: 28px;
     border: 1px solid;
     border-radius: 25px;
-    background-color: darkgrey;
+    background-color: #e9b047;
 }
-.post1{
+
+.login input[type=text],
+.login input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.login input[type=text]:focus,
+.login input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Установите стиль для всех кнопок */
+.login button {
+    background-color: #7a74bd;
+    color: white;
+    margin: 3px 0;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    opacity: 0.9;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.login button:hover {
+    opacity: 1;
+}
+
+/* Дополнительные стили для кнопки Отмена */
+.login .cancelbtn {
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.login .cancelbtn,
+.login .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.login .container {
+    padding: 16px;
+}
+
+/* Модальный (фон) */
+.login .modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    padding-top: 50px;
+}
+
+/* Модальное содержание/бокс */
+.login .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% сверху, 15% снизу и по центру */
+    border: 1px solid #888;
+    width: 40%;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Style the horizontal ruler */
+.login hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Кнопка закрытия (x) */
+.login .close {
+    position: absolute;
+    right: 580px;
+    top: 144px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+    opacity: .5;
+}
+
+.login .close:hover,
+.login .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.login .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.post1 {
     width: 100%;
     height: 92.9vh;
     background-color: green;
     position: relative;
     top: 70px;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../img/challenges_post1.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/challenges_post1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    }
-.post1 .post1_text{
+}
+
+.post1 .post1_text {
     text-align: left;
     width: fit-content;
-    padding-top: 150px;
+    padding-top: 167px;
     padding-left: 50px;
     color: white;
 }
-.post2{
+
+.post2 {
     width: 100%;
-    height:fit-content;
+    height: fit-content;
 }
-.post2 .line1{
+
+.post2 .line1 {
     display: flex;
     justify-content: space-around;
     height: fit-content;
     margin: 140px 30px 0 30px;
     color: black;
 }
-.post2 .line1 .challenge1{
+
+.post2 .line1 .challenge1 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line1 .challenge1 .challenge1_text{
+
+.post2 .line1 .challenge1 .challenge1_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
+
 .post2 .line1 .challenge1 .challenge1_text button {
     width: 125px;
     height: 35px;
@@ -123,17 +251,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line1 .challenge2{
+
+.post2 .line1 .challenge2 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line1 .challenge2 .challenge2_text{
+
+.post2 .line1 .challenge2 .challenge2_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge2 .challenge2_text button{
+
+.post2 .line1 .challenge2 .challenge2_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -148,17 +279,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line1 .challenge3{
+
+.post2 .line1 .challenge3 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line1 .challenge3 .challenge3_text{
+
+.post2 .line1 .challenge3 .challenge3_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge3 .challenge3_text button{
+
+.post2 .line1 .challenge3 .challenge3_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -173,17 +307,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line1 .challenge4{
+
+.post2 .line1 .challenge4 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line1 .challenge4 .challenge4_text{
+
+.post2 .line1 .challenge4 .challenge4_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line1 .challenge4 .challenge4_text button{
+
+.post2 .line1 .challenge4 .challenge4_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -198,24 +335,28 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line2{
+
+.post2 .line2 {
     display: flex;
     justify-content: space-around;
     height: fit-content;
     margin: 25px 30px 0 30px;
     color: black;
 }
-.post2 .line2 .challenge5{
+
+.post2 .line2 .challenge5 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line2 .challenge5 .challenge5_text{
+
+.post2 .line2 .challenge5 .challenge5_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line2 .challenge5 .challenge5_text button{
+
+.post2 .line2 .challenge5 .challenge5_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -230,17 +371,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line2 .challenge6{
+
+.post2 .line2 .challenge6 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line2 .challenge6 .challenge6_text{
+
+.post2 .line2 .challenge6 .challenge6_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line2 .challenge6 .challenge6_text button{
+
+.post2 .line2 .challenge6 .challenge6_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -255,17 +399,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line2 .challenge7{
+
+.post2 .line2 .challenge7 {
     width: 435px;
     height: 478px;
     border: 1px solid black;
 }
-.post2 .line2 .challenge7 .challenge7_text{
+
+.post2 .line2 .challenge7 .challenge7_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line2 .challenge7 .challenge7_text button{
+
+.post2 .line2 .challenge7 .challenge7_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -280,17 +427,20 @@ body {
     transition: .5s;
     border: none;
 }
-.post2 .line2 .challenge8{
+
+.post2 .line2 .challenge8 {
     width: 435px;
     border: 1px solid black;
     height: 478px;
 }
-.post2 .line2 .challenge8 .challenge8_text{
+
+.post2 .line2 .challenge8 .challenge8_text {
     height: 49.5%;
     padding-top: 10%;
     margin-left: 30px;
 }
-.post2 .line2 .challenge8 .challenge8_text button{
+
+.post2 .line2 .challenge8 .challenge8_text button {
     width: 125px;
     height: 35px;
     border-radius: 28px;
@@ -305,33 +455,35 @@ body {
     transition: .5s;
     border: none;
 }
+
+
 footer {
     width: 93%;
     height: 300px;
     position: relative;
     left: 66px;
-    bottom: -62px;
-    margin-bottom: 6%;
-    border: 1px solid black;
+    bottom: -60px;
 }
 
 footer .left_side_footer {
-    width: 18%;
+    width: 16%;
     height: 100%;
     color: black;
-    border-right: 1px solid black;
+    border: 1px solid black;
 }
 
 footer .left_side_footer h5 {
-    text-decoration: none;
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    margin-left: 110px;
-    padding-top: 24px;
+    
+    text-decoration: none;
     font-size: 18px;
+    
+    height: 100%;
+    width: fit-content;
+
+    margin-left: 99px;
+    padding-top: 24px;
 }
 
 footer .left_side_footer h5 a {
@@ -344,15 +496,15 @@ footer .left_side_footer h5 a:hover {
 }
 
 footer .center_side_footer {
-    width: 64%;
+    width: 66%;
     height: 100%;
+    background-color: white;
     position: absolute;
     bottom: 0%;
-    left: 18%;
+    left: 16.1%;
 }
 
-footer .center_side_footer .footer_input h5,
-h6 {
+footer .center_side_footer .footer_input h5, h6 {
     font-size: 22px;
     color: black;
 }
@@ -383,15 +535,17 @@ footer .center_side_footer .footer_input button:hover {
     border: none;
 }
 footer .right_side_footer .footer_links {
-    width: 18%;
+    width: 17.15%;
     height: 100%;
+
     position: absolute;
-    top: 0%;
-    left: 82%;
     padding-left: 108px;
     padding-top: 4%;
+    
+    top: 0%;
+    left: 82%;
+    
     background-color: rgb(133, 78, 195);
-    border-left: 1px solid black;
 }
 
 footer .right_side_footer .footer_links .links {

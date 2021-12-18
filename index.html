@@ -18,11 +18,28 @@
             <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
         </div>
         <div class="rightbar">
-            <a href="####" style="text-decoration: none;" id="btn_about">About</a>
-            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
-            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
-            <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
+            <span>    <a href="####" style="text-decoration: none;" class="btn_about">About</a></span>
+            <span>    <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a></span>
+            <span>    <a href="####" style="text-decoration: none;" id="btn_community">Community</a></span>
+            <span>    <a href="####" style="text-decoration: none;" class="btn_contact">Contact</a></span>
         </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="btn_main" href="####">Main.</a></li>
+                    <li><a class="btn_about" href="####">About.</a></li>
+                    <li><a class="btn_trainers" href="####">Trainers.</a></li>
+                    <li><a class="btn_invite" href="####">Join us.</a></li>
+                    <li><a class="btn_contact" href="####">Contact</a></li>
+            </ul>
+          </div>
+
+
         <div class="login" style="position: fixed;">
 
             <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
@@ -35,10 +52,10 @@
                         <h1>Вход</h1>
                         <hr>
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder=" Ведите Email" name="email" required>
+                        <input type="text" placeholder=" Введите Email" name="email" required>
 
                         <label for="psw"><b>Пароль</b></label>
-                        <input type="password" placeholder=" Ведите пароль" name="psw" required>
+                        <input type="password" placeholder=" Введите пароль" name="psw" required>
 
                         <label>
                             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
@@ -69,7 +86,7 @@
             </h5>
             <button> <a href="####" style="text-decoration: none;" id="Ahref"> View Challenges </a> </button>
         </div>
-        <div class="post1_text1">
+        <!-- <div class="post1_text1">
             <h1 style="text-align: center; color: black;position: relative; top: 40px; font-size: 29px; font-family: roboto-bold,roboto,sans-serif ;">
                 H2FIT FEATURED <br />
                 CHALLENGES </h1>
@@ -87,7 +104,7 @@
                     <h1> <b>Strenght Challenge</b></h1>
                     <p style="margin-top: 14px;">1 Week 1 Participant</p>
                 </div>
-                <button> Join </button>
+            <a style="text-decoration: none; color: white;" href="./buyPage.html">   <button> Join </button></a>
             </div>
             <div class="view_all_btn">
                 <a href="./challenges.html">
@@ -96,49 +113,44 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <div class="post2">
-        <img data-aos="fade-up" data-aos-duration="3000" src="./img/img2.webp" alt="" class="img2" style="
-    position: relative;
-    width: 610px;
-    height: 650px;
-    left: 120px;
-    margin-top: 5%;">
+        <div class="post2">
+            <div class="post2_text">
+                <span id="text1"> ABOUT H2FIT </span> <br>
+                <span id="text2"> Increase your fitness and strenght anywhere, anytime. </span> <br>
+                <span id="text3">
+                    I'm a paragraph. Click here to add your own text and <br />
+                    edit me. It's easy. Just click “Edit Text” or double click <br />
+                    me to add your own content and make changes to the <br />
+                    font. I'm a great place for you to tell a story and let your <br />
+                    users know a little more about you.
+                </span> <br />
+                <button> <a href="./challenges.html" style="text-decoration: none;"> Our Challenges </a> </button>
+            </div>
+            <img data-aos="fade-up" data-aos-duration="3000" src="./img/img2.webp" alt="" class="img2" >
 
-        <div class="post2_text" data-aos="fade-left" data-aos-duration="3000">
-            <span id="text1"> ABOUT H2FIT </span>
-            <span id="text2"><br /> Increase your fitness and strenght anywhere, anytime. </span>
-            <span id="text3"> <br />
-                I'm a paragraph. Click here to add your own text and <br />
-                edit me. It’s easy. Just click “Edit Text” or double click <br />
-                me to add your own content and make changes to the <br />
-                font. I’m a great place for you to tell a story and let your <br />
-                users know a little more about you.
-            </span> <br />
-            <button> <a href="####" style="text-decoration: none;"> Our Challenges </a> </button>
+            <div class="post2_text2">
+                <h1>THE TRAINERS</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. I'm a great place <br />
+                    for you to tell a story and let your users know a little more about you
+                </p>
+            </div>
+
+            <div class="trainers">
+                <a href="####">
+                    <img src="./img/trainer1.webp" alt="woman" class="woman">
+                </a>
+
+                <a href="####">
+                    <img src="./img/trainer2.webp" alt="man" class="man">
+                </a>
+            </div>
 
         </div>
 
-        <div class="post2_text2">
-            <h1>THE TRAINERS</h1>
-            <p>I'm a paragraph. Click here to add your own text and edit me. I'm a great place <br />
-                for you to tell a story and let your users know a little more about you
-            </p>
-        </div>
 
-        <div class="trainers">
-            <a href="####">
-                <img src="./img/trainer1.webp" alt="woman" class="woman">
-            </a>
-
-            <a href="####">
-                <img src="./img/trainer2.webp" alt="man" class="man">
-            </a>
-        </div>
-
-    </div>
     <div class="challenges">
         <div class="post3_text1">
             <h1>MORE CHALLENGES</h1>
@@ -146,7 +158,7 @@
                 I'm a paragraph. Click here to add your own text and edit me. I’m a great
                 <br /> place for you to tell a story and let your users know a little more about you.
             </h6>
-            <button> <a href="####" style="text-decoration: none;">Viev All Challenges </a> </button>
+        <a href="./challenges.html" style="text-decoration: none;">  <button> View All Challenges  </button></a>
         </div>
         <div class="post3_block">
             <div class="block1">
@@ -157,7 +169,8 @@
                 <span>
                     <h6>1 Week <br /> Free </h6>
                 </span>
-                <button> Join </button>
+                <a href="./challenges.html"> <button> Join </button></a>
+
             </div>
             <div class="block2">
                 <img src="./img/challenge2.png" style="height: 27.8vh;" alt="">
@@ -167,7 +180,8 @@
                 <span>
                     <h6>1 Week • 1 Participant <br /> Free </h6>
                 </span>
-                <button> Join </button>
+                <a href="./challenges.html"> <button> Join </button></a>
+
 
             </div>
             <div class="block3">
@@ -178,66 +192,77 @@
                 <span>
                     <h6>1 Week • 1 Participant <br /> Free </h6>
                 </span>
-                <button> Join </button>
+                <a href="./challenges.html"> <button> Join </button></a>
 
             </div>
         </div>
     </div>
+
     <div class="invite">
         <div class="left">
-            <div class="invite_left_text">
+            <div class="left-text">
                 <img src="./img/invite_img.png" style="width: 70px; height: 70px;" alt="">
-                <h1>
-                    <b style="width: fit-content;line-height: 65px;">
-                        READY FOR </BR>
-                        THE ULTIMATE </BR>
-                        CHALLENGE?
-                    </b>
-                </h1>
-                <h4 style="font-size: 21px; margin-top: 32px; line-height: 33px;">
+                <h1 style="width:fit-content; line-height:65px; font-size:50px; font-weight: bolder;">
+                    READY FOR <br>
+                    THE ULTIMATE <br>
+                    CHALLENGE? <br>
+                  </h1>
+                <h4 style="font-size: 28px; margin-top: 36px; line-height: 40px;">
                     For any questions about our program fill </br>
                     out the form below and we'll be sure to </br>
                     get back to you.
                 </h4>
             </div>
         </div>
-        <div class="right">
-            <div class="invite_right_text">
+
+
+         <div class="right">
+            <div class="right-form">
                 <form action="">
-                    <div class="first_name">
-                        <p>First Name</p>
-                        <input type="text" size="20px">
-                    </div>
-                    <div class="second_name">
-                        <p>Second Name</p>
-                        <input type="text" size="20px">
-                    </div>
-                    <div class="email">
-                        <p>Email*</p>
-                        <input type="email" size="20px">
-                    </div>
-                    <div class="Subject">
-                        <p>Subject</p>
-                        <input type="text" size="20px">
-                    </div>
-                    <div class="input_msg">
-                        <p>Leave us a message...</p>
-                        <input type="text" size="62px">
-                    </div>
-                    <div class="Submit_btn">
-                        <button>Submit</button>
-                    </div>
+                  <div class="first_name">
+                    <p>First Name</p>
+                    <input type="text" size="20px">
+                  </div>
+                  <div class="second_name">
+                    <p>Second Name</p>
+                    <input type="text" size="20px">
+                  </div>
+                  <div class="email">
+                    <p>Email*</p>
+                    <input type="email" size="20px">
+                  </div>
+                  <div class="Subject">
+                    <p>Subject</p>
+                    <input type="text" size="20px">
+                  </div>
+                  <div class="input_msg" style="padding: 35px 8px 120px 0px;">
+                    <p>Leave us a message...</p>
+                    <input type="text" style="width:541px; padding-bottom:25px; height: 95px;">
+                  </div>
+
+                  <button>Submit</button>
+          
                 </form>
-            </div>
-        </div>
+              </div>
+        </div> 
+
+
+
+
+
+
+
+
+
     </div>
-    <footer>
+
+    <!-- <footer>
         <div class="left_side_footer">
             <h5>
                 <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
                 <a href="####" id="footer_left_home_btn"> Home</a> </br>
                 <a href="####" id="footer_left_about_btn"> About </a></br>
-                <a href="####"> Challenges </a> </br>
+                <a href="./challenges.html"> Challenges </a> </br>
                 <a href="####"> Community</a> </br>
                 <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
             </h5>
@@ -266,7 +291,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>  --> -->
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

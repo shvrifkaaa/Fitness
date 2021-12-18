@@ -52,7 +52,7 @@ body {
 .rightbar a {
     scroll-behavior: smooth;
     color: black;
-
+    text-decoration: none;
 }
 
 .login {

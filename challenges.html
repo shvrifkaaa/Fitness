@@ -6,27 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
     <link rel="stylesheet" href="./css/challenges.css">
     <header id="header" style="position: fixed;">
         <div class="logo">
-            <img src="./img/logo.png" alt="1">
-            <h2>FitName</h2>
+            <img src="./img/logo.png" alt="">
+            <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
         </div>
         <div class="rightbar">
             <a href="./index.html" style="text-decoration: none;" id="btn_about">About</a>
-            <a href="####" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
             <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
             <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
         </div>
         <div class="login" style="position: fixed;">
-            <img src="../fitness/img/avalogo.png" style="width: 32px; border-radius: 16px; top: -2.9px; left: -2px;"
-                alt="">
-            <a href="" class="LogIn"> log in </a>
-        </div>
+
+            <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="./action_page.php">
+                    <div class="container">
+                        <h1>Вход</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder=" Введите Email" name="email" required>
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder=" Введите пароль" name="psw" required>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Запомнить меня
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отменить</button>
+                            <button type="submit" class="signupbtn">Вход</button>
+                        </div>
+                        <a href="./regPage.html"> Регистрация </a>
+                    </div>
+                </form>
+            </div>
+            </div>
     </header>
 
     <div class="post1">
@@ -49,7 +75,8 @@
                     <h2> <b> Core Challenge</b></h2>
                     <h4> 1 Week • 5 Participants </h4>
                     <p> Free</p>
-                    <button> Join</button>
+                    <a href="./buyPage.html"> <button> Join</button> </a>
+
                 </div>
             </div>
             <div class="challenge2">
@@ -58,7 +85,8 @@
                     <h2> <b> Mobility Challenge</b></h2>
                     <h4> 1 Week • 1 Participants </h4>
                     <p> Free</p>
-                    <button> Join</button>
+                    <a href="./buyPage.html"> <button> Join</button> </a>
+
                 </div>
             </div>
             <div class="challenge3">
@@ -67,7 +95,8 @@
                     <h2> <b> Strength Challenge</b></h2>
                     <h4> 1 Week • 2 Participants </h4>
                     <p> Free</p>
-                    <button> Join</button>
+                    <a href="./buyPage.html"> <button> Join</button> </a>
+
                 </div>
             </div>
             <div class="challenge4">
@@ -76,7 +105,8 @@
                     <h2> <b> Cardio Challenge</b></h2>
                     <h4> 1 Week • 1 Participants </h4>
                     <p> Free</p>
-                    <button> Join</button>
+                    <a href="./buyPage.html"> <button> Join</button> </a>
+
                 </div>
             </div>
         </div>
@@ -88,7 +118,7 @@
                     <h2> <b> Core 2 Challenge</b></h2>
                     <h4> 1 Week • 5 Participants </h4>
                     <p> Free</p>
-                   <a href="https://www.youtube.com"> <button> Join </button>  </a>
+                    <a href="./buyPage.html"> <button> Join</button> </a>
                 </div>
             </div>
             <div class="challenge6">
@@ -97,8 +127,7 @@
                     <h2> <b> Mobility 2 Challenge</b></h2>
                     <h4> 1 Week </h4>
                     <p> Free</p>
-                    <button> Join</button>
-
+                    <a href="./buyPage.html"> <button> Join</button> </a>
                 </div>
             </div>
             <div class="challenge7">
@@ -107,8 +136,7 @@
                     <h2> <b> Strength Challenge</b></h2>
                     <h4> 1 Week </h4>
                     <p> Free</p>
-                    <button> Join</button>
-
+                    <a href="./buyPage.html"> <button> Join</button> </a>
                 </div>
             </div>
             <div class="challenge8">
@@ -117,8 +145,7 @@
                     <h2> <b> Cardio Challenge</b></h2>
                     <h4> 1 Week • 1 Participants </h4>
                     <p> Free</p>
-                    <button> Join</button>
-
+                    <a href="./buyPage.html"> <button> Join</button> </a>
                 </div>
             </div>
         </div>
@@ -130,7 +157,7 @@
                 <b style="margin-top: 10px; padding-bottom: 10px;"><a href="####"> H2FIT </a> </b> </br>
                 <a href="####" id="footer_left_home_btn"> Home</a> </br>
                 <a href="####" id="footer_left_about_btn"> About </a></br>
-                <a href="####"> Challenges </a> </br>
+                <a href="./challenges.html"> Challenges </a> </br>
                 <a href="####"> Community</a> </br>
                 <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
             </h5>
@@ -147,9 +174,8 @@
         </div>
         <div class="right_side_footer">
             <div class="footer_links">
-                <a href="index.html"> <img
-                        src="./img/footer_img2.png"
-                        style="width: 100px; height: 100px; " alt=""> </a>
+                <a href="index.html">
+                    <img src="./img/footer_img2.png" style="width: 100px; height: 100px;" alt=""> </a>
                 <div class="links">
                     <a href="https://www.instagram.com"> <img src="./img/link_instagram.png"
                             style="width: 28px; height: 28px; border-radius: 30px;" alt=""> </a>
@@ -165,6 +191,8 @@
 
 
     <script src="./js/challenges.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </body>
 
 </html>
