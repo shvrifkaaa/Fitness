@@ -1119,6 +1119,7 @@ footer .right_side_footer .footer_links .links {
     .post1_text1{
         left: 227%;
         height: fit-content;
+        display: none;
     }
     .post2{
         display: flex;
@@ -1171,18 +1172,51 @@ footer .right_side_footer .footer_links .links {
         margin-left: -13px;
         margin-top: 7px;
     }
+
     .invite{
         margin-top: 1260px;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        background: none;
+        width: fit-content;
+        margin-left: 12.5%;
     }
+
     .left{
         height: 670px;
         padding-bottom: 102px;
+        width: 770px;
     }
+    
     .left-text{
         margin-top: 97px;
+    }
+
+    .right{
+        height: 670px;
+        width: 770px;
+    }
+
+    footer{
+        top: 530px;
+        margin: 0 0 28px -27px;
+    }
+
+    .left_side_footer h5{
+        position: absolute;
+        left: -60px;
+        top: 10px;
+    }
+
+    .center_side_footer .footer_input{
+        margin-left: -88px;
+    }
+
+    footer .right_side_footer .footer_links{
+        width: 18%;
+        padding-left: 40px;
+        padding-top: 8%;
     }
     
 }
