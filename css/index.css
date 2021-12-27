@@ -1083,16 +1083,25 @@ footer .right_side_footer .footer_links .links {
 @media (min-width: 992px) and (max-width:1025px) { 
 
     .rightbar{
-        display: none;
+        display: block;
+        width: fit-content;
+        left: 33%;
+        word-spacing: 24px;
+        top: 18px;
+        font-size: 25px;
     }
     .hamburger-menu{
         display: block;
     }
+    .menu__box{
+        display: block;
+    }
     .login button{
-        margin: 7px 80px 0 0;
+        margin: 7px -9px 0 0;
     }
     .menu__btn{
         margin:6px 0 0 42px  ;
+        display: none;
     }
     .post1{
         background-attachment: fixed;

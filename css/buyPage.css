@@ -209,9 +209,12 @@ body {
   width: 540px;
   height: 236px;
 }
-
+.bg-color-block .text-block{
+  height: fit-content;;
+}
 .bg-color-block .text-block h3 {
   font-size: 40px;
+  width: fit-content;
 }
 
 .bg-color-block .text-block button {
@@ -293,7 +296,7 @@ footer .left_side_footer h5 {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: fit-content;
   margin-left: 110px;
   padding-top: 24px;
   font-size: 18px;
@@ -363,4 +366,65 @@ footer .right_side_footer .footer_links {
 
 footer .right_side_footer .footer_links .links {
   margin-top: 10px;
+}
+
+
+@media (min-width:992px) and (max-width:1025px) { 
+  header .logo{
+    width: fit-content;
+    height: fit-content;
+    margin-left: -20px;
+    margin-top: -3px;
+}
+.rightbar{
+    display: block;
+    width: fit-content;
+    left: 32%;
+    word-spacing: 24px;
+    top: 18px;
+    font-size: 25px;
+}
+.login button{
+    margin: 7px -9px 0 0;
+}
+
+.post1{
+  width: 90%;
+  height: 70vh;
+}
+.bg-color-block{
+  left: 21%;
+}
+.post2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 40%;
+  left: 0px;
+}
+.post2 .post2-img img{
+  margin-top: -240px;
+  margin-left: 58px;
+}
+
+footer{
+  top: 25px;
+  margin: 0 0 28px -21px;
+}
+
+.left_side_footer h5{
+  position: absolute;
+  left: -60px;
+  top: 10px;
+}
+
+.center_side_footer .footer_input{
+  margin-left: -88px;
+}
+
+footer .right_side_footer .footer_links{
+  width: 18%;
+  padding-left: 40px;
+  padding-top: 8%;
+}
 }

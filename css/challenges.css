@@ -1,9 +1,9 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: roboto-thin, roboto, sans-serif;
+    font-family: 'roboto' sans-serif;
 
 }
 
@@ -193,14 +193,15 @@ body {
 
 .post1 {
     width: 100%;
-    height: 92.9vh;
+    height: 56vh;
     background-color: green;
     position: relative;
     top: 70px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/challenges_post1.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/challenges_post1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 .post1 .post1_text {
@@ -211,258 +212,57 @@ body {
     color: white;
 }
 
-.post2 {
+.post2--challenges{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+    margin-top: 103px;
+}
+.challenge-active{
+    border: 1px solid black;
+    width: 23%;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 430px;
+}
+.challenge-active img { 
     width: 100%;
-    height: fit-content;
+    height: 55%;
 }
-
-.post2 .line1 {
-    display: flex;
-    justify-content: space-around;
-    height: fit-content;
-    margin: 140px 30px 0 30px;
-    color: black;
+.challenge-text{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 35px;
 }
-
-.post2 .line1 .challenge1 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line1 .challenge1 .challenge1_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line1 .challenge1 .challenge1_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
+.challenge-text a{
+    text-decoration: none;
     color: white;
-    transition: .5s;
-    border: none;
 }
-
-.post2 .line1 .challenge1 .challenge1_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line1 .challenge2 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line1 .challenge2 .challenge2_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line1 .challenge2 .challenge2_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
+.challenge-text button{
+    border-radius: 18px;
     color: white;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line1 .challenge2 .challenge2_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line1 .challenge3 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line1 .challenge3 .challenge3_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line1 .challenge3 .challenge3_text button {
-    width: 125px;
+    width: 100px;
     height: 35px;
-    border-radius: 28px;
+    border: none;
+    transition: .5s;
     background-color: rgb(129, 75, 231);
-    color: white;
-    transition: .5s;
-    border: none;
+    
 }
-
-.post2 .line1 .challenge3 .challenge3_text button:hover {
+.challenge-text button:hover{
+    transition: 0.5s;
     background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line1 .challenge4 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line1 .challenge4 .challenge4_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line1 .challenge4 .challenge4_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
     color: white;
-    transition: .5s;
-    border: none;
+    border:none;
 }
-
-.post2 .line1 .challenge4 .challenge4_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 {
-    display: flex;
-    justify-content: space-around;
-    height: fit-content;
-    margin: 25px 30px 0 30px;
-    color: black;
-}
-
-.post2 .line2 .challenge5 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line2 .challenge5 .challenge5_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line2 .challenge5 .challenge5_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
-    color: white;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge5 .challenge5_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge6 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line2 .challenge6 .challenge6_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line2 .challenge6 .challenge6_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
-    color: white;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge6 .challenge6_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge7 {
-    width: 435px;
-    height: 478px;
-    border: 1px solid black;
-}
-
-.post2 .line2 .challenge7 .challenge7_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line2 .challenge7 .challenge7_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
-    color: white;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge7 .challenge7_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge8 {
-    width: 435px;
-    border: 1px solid black;
-    height: 478px;
-}
-
-.post2 .line2 .challenge8 .challenge8_text {
-    height: 49.5%;
-    padding-top: 10%;
-    margin-left: 30px;
-}
-
-.post2 .line2 .challenge8 .challenge8_text button {
-    width: 125px;
-    height: 35px;
-    border-radius: 28px;
-    background-color: rgb(129, 75, 231);
-    color: white;
-    transition: .5s;
-    border: none;
-}
-
-.post2 .line2 .challenge8 .challenge8_text button:hover {
-    background-color: black;
-    transition: .5s;
-    border: none;
-}
-
-
 footer {
     width: 93%;
     height: 300px;
     position: relative;
     left: 66px;
     bottom: -60px;
+    margin-bottom: 25px;
 }
 
 footer .left_side_footer {
@@ -550,4 +350,78 @@ footer .right_side_footer .footer_links {
 
 footer .right_side_footer .footer_links .links {
     margin-top: 10px;
+}
+
+
+
+
+
+
+@media (min-width:992px) and (max-width:1025px){
+    header .logo{
+        width: fit-content;
+        height: fit-content;
+        margin-left: -20px;
+        margin-top: -3px;
+    }
+    .rightbar{
+        display: block;
+        width: fit-content;
+        left: 32%;
+        word-spacing: 24px;
+        top: 18px;
+        font-size: 25px;
+    }
+    .login button{
+        margin: 7px -9px 0 0;
+    }
+    .post1{
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    }
+    .post1_text{
+        position: absolute;
+        bottom: 40px;
+    }
+    .post1_text h1, h3{
+        background: none;
+    }
+    .post2--challenges{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .challenge-active{
+        width: 40%;
+    }
+
+
+
+
+
+
+
+    footer{
+        top: 25px;
+        margin: 0 0 28px -32px;
+    }
+
+    .left_side_footer h5{
+        position: absolute;
+        left: -60px;
+        top: 10px;
+    }
+
+    .center_side_footer .footer_input{
+        margin-left: -88px;
+    }
+
+    footer .right_side_footer .footer_links{
+        width: 18%;
+        padding-left: 40px;
+        padding-top: 8%;
+    }
 }
