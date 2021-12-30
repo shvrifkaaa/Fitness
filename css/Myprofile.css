@@ -52,7 +52,7 @@ body {
 .rightbar a {
     scroll-behavior: smooth;
     color: black;
-    text-decoration: none;
+
 }
 
 .login {
@@ -61,17 +61,17 @@ body {
     right: 3%;
     word-spacing: 31px;
     font-size: 24px;
-}
-
-.login a {
+  }
+  
+  .login a {
     text-decoration: none;
     font-size: 28px;
-    border: 1px solid;
-    border-radius: 25px;
-    background-color: darkgrey;
+    border: none;
+    color: white;
 }
-
-.login input[type=text],.login input[type=password] {
+  
+  .login input[type=text],
+  .login input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -81,7 +81,8 @@ body {
   }
   
   /* Add a background color when the inputs get focus */
-  .login input[type=text]:focus,.login input[type=password]:focus {
+  .login input[type=text]:focus,
+  .login input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
@@ -97,10 +98,10 @@ body {
     opacity: 0.9;
     height: 40px;
     border-radius: 20px;
-}
+  }
   
   .login button:hover {
-    opacity:1;
+    opacity: 1;
   }
   
   /* Дополнительные стили для кнопки Отмена */
@@ -109,7 +110,8 @@ body {
   }
   
   /* Float cancel and signup buttons and add an equal width */
-  .login .cancelbtn,.login .signupbtn {
+  .login .cancelbtn,
+  .login .signupbtn {
     float: left;
     width: 50%;
   }
@@ -121,23 +123,31 @@ body {
   
   /* Модальный (фон) */
   .login .modal {
-    display: none; /* Скрыто по умолчанию */
-    position: fixed; /* Оставаться на месте */
-    z-index: 1; /* Сидеть на вершине */
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
     left: 0;
     top: 0;
-    width: 100%; /* Полная ширина */
-    height: 100%; /* Полная высота */
-    overflow: auto; /* Включите прокрутку, если это необходимо */
-    padding-top: 50px;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgba(0, 0, 0, 35%);
   }
   
   /* Модальное содержание/бокс */
   .login .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
+    margin: 5% auto 15% auto;
+    /* 5% сверху, 15% снизу и по центру */
     border: 1px solid #888;
-    width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    width: 40%;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
   }
   
   /* Style the horizontal ruler */
@@ -145,12 +155,12 @@ body {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
-   
+  
   /* Кнопка закрытия (x) */
   .login .close {
     position: absolute;
     right: 580px;
-    top: 144px;
+    top: 111px;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -158,7 +168,7 @@ body {
     opacity: .5;
   }
   
-  .login  .close:hover,
+  .login .close:hover,
   .login .close:focus {
     color: #f44336;
     cursor: pointer;
@@ -176,59 +186,87 @@ body {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
-  }
-
-.container-form {
-    width: 100%;
-    height: 100vh;
+}
+.bg-profile{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
     border: 1px solid black;
-    background-color: #cce590;
+    margin-top: 70px;
+    border-top: none;
+    align-items: center;
 }
-.container-form form{
-    width: 41%;
-    height: 55%;
-    background-color:#deb88761;
-    position: relative;
-    top: 22%;
-    left: 31%;
+.bg-page{
+    width: 50%;
+    height: 35%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    background-color:rgb(86, 74, 167);
 }
-.container-form form p{
-    padding-left: 27%;
-    padding-top: 5%;
-    font-size: 22px;
+.bg-page img{
+    width: 13%;
+    border-radius: 47px;
+    margin: 0 33px 25px 45px;
 }
-.container-form form .btn_click{
-    margin-top: 27px;
-    border: none;
-    width: 280px;
-    height: 40px;
-    background-color: #c7c069;
-    transition: .6s;
-    font-size: 20px;
-    border-radius: 12px;
+.bg-page .bg-Name{
+  color: #cfd3d0;
+  margin-bottom: 20px;
 }
-.container-form form .btn_click:hover{
-    background-color: #9898f7;
-    border: none;
-    transition: .6s ;
-    border-radius: 20px;
+.list-pages { 
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
 }
-@media (min-width:992px) and (max-width:1025px) {
+.list-pages .pages{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
-  .rightbar {
-    display: block;
-    width: fit-content;
-    left: 33%;
-    word-spacing: 24px;
-    top: 18px;
-    font-size: 25px;
-  }
-  .container-form form {
-    width: 54%;
-    height: 66%;
-    left: 22%;
-  }
-  .container-form form p{
-    padding-left: 16%;
-  }
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width:1025px) { 
+
+    .rightbar{
+        display: block;
+        width: fit-content;
+        left: 33%;
+        word-spacing: 24px;
+        top: 18px;
+        font-size: 25px;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .menu__box{
+        display: block;
+    }
+    .login button{
+        margin: 7px -9px 0 0;
+    }
+    .menu__btn{
+        margin:6px 0 0 42px  ;
+        display: none;
+    }
+    .login .modal-content{
+        width: 71%;
+    }
+    .login .cancelbtn { 
+        margin-right: 0px;
+    }
+    .login .close{
+        top: 61px;
+        right: 159px;
+    }
 }

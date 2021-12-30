@@ -18,28 +18,11 @@
             <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
         </div>
         <div class="rightbar">
-            <span>    <a href="####" style="text-decoration: none;" class="btn_about">About</a></span>
-            <span>    <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a></span>
-            <span>    <a href="####" style="text-decoration: none;" id="btn_community">Community</a></span>
-            <span>    <a href="####" style="text-decoration: none;" class="btn_contact">Contact</a></span>
+            <a href="./index.html" style="text-decoration: none;" id="btn_about">About</a>
+            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
+            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
+            <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
         </div>
-
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-        
-            <ul class="menu__box">
-              <li><a class="btn_main" href="####">Main.</a></li>
-                    <li><a class="btn_about" href="####">About.</a></li>
-                    <li><a class="btn_trainers" href="####">Trainers.</a></li>
-                    <li><a class="btn_invite" href="####">Join us.</a></li>
-                    <li><a class="btn_contact" href="####">Contact</a></li>
-            </ul>
-          </div>
-
-
         <div class="login" style="position: fixed;">
 
             <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
@@ -47,7 +30,7 @@
             <div id="id01" class="modal">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close"
                     title="Закрыть Modal">&times;</span>
-                <form class="modal-content" action="../action_page.php">
+                <form class="modal-content" action="./action_page.php">
                     <div class="container">
                         <h1>Вход</h1>
                         <hr>
@@ -66,11 +49,12 @@
                             <button type="button" onclick="document.getElementById('id01').style.display='none'"
                                 class="cancelbtn">Отменить</button>
                             <button type="submit" class="signupbtn">Вход</button>
+                            <button type="button" class="regPage" style="width: 207px;"><a href="./regPage.html">  Регистрация </a>    </button> 
                         </div>
-                        <a href="./regPage.html"> Регистрация </a>
                     </div>
                 </form>
             </div>
+        </div>
     </header>
     <div class="post1">
         <div id="post1_text" data-aos="fade-left" data-aos-duration="3000">

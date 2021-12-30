@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/regPage.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+    <link rel="stylesheet" href="./css/Myprofile.css">
 </head>
+
 <body>
     <header id="header" style="position: fixed;">
         <div class="logo">
@@ -16,19 +16,36 @@
             <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;"> FitName </a> </h2>
         </div>
         <div class="rightbar">
-            <a href="./index.html" style="text-decoration: none;" id="btn_about">About</a>
-            <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a>
-            <a href="####" style="text-decoration: none;" id="btn_community">Community</a>
-            <a href="####" style="text-decoration: none;" id="btn_contact">Contact</a>
+            <span>    <a href="####" style="text-decoration: none;" class="btn_about">About</a></span>
+            <span>    <a href="./challenges.html" style="text-decoration: none;" id="btn_challenges">Challenges</a></span>
+            <span>    <a href="####" style="text-decoration: none;" id="btn_community">Community</a></span>
+            <span>    <a href="####" style="text-decoration: none;" class="btn_contact">Contact</a></span>
         </div>
+
+        <!-- <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="btn_main" href="####">Main.</a></li>
+                    <li><a class="btn_about" href="####">About.</a></li>
+                    <li><a class="btn_trainers" href="####">Trainers.</a></li>
+                    <li><a class="btn_invite" href="####">Join us.</a></li>
+                    <li><a class="btn_contact" href="####">Contact</a></li>
+            </ul>
+          </div> -->
+
+
         <div class="login" style="position: fixed;">
-<!-- 
+
             <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
 
             <div id="id01" class="modal">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close"
                     title="Закрыть Modal">&times;</span>
-                <form class="modal-content" action="./action_page.php">
+                <form class="modal-content">
                     <div class="container">
                         <h1>Вход</h1>
                         <hr>
@@ -46,38 +63,46 @@
                         <div class="clearfix">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'"
                                 class="cancelbtn">Отменить</button>
-                            <button type="submit" class="signupbtn">Вход</button>
-                            <button type="button" class="regPage" style="width: 207px;"><a href="./regPage.html">  Регистрация </a>    </button> 
+                            <button type="submit" class="signupbtn" onclick="input()">Вход</button>
                         </div>
+                        <a href="./regPage.html"> Регистрация </a>
                     </div>
                 </form>
             </div>
-        </div> -->
     </header>
-
-    <div class="container-form">
-        <form action="">
-            <p>
-                <label for="name"> Имя:</label><br>
-                <input type="Name" class="name" size="30px"> <br>
-
-                <label for="email"> Электронная почта:</label><br>
-                <input type="Email" class="email" size="30px"> <br>
-
-                <input type="radio" name="Sex" id="Male" placeholder="Мужчина"> Мужчина <br>
-                <input type="radio" name="Sex" id="Female" placeholder="Женщина"> Женщина <br>
-
-                <label for="date"> Дата рождения:</label> <br>
-                <input type="date" class="date" size="30px"> <br>
-
-                <label for="password"> Пароль:</label> <br>
-                <input type="password" class="password" size="30px"> <br>
-
-
-                <button class="btn_click"> Зарегистрироваться</button>
-            </p>
-        </form>
+<div class="bg-profile" >
+    <div class="bg-page">
+        <img src="./img/Xiao.jpg" alt="" class="ava">
+        <div class="bg-Name">
+            <h3> <b>  Шариф Каландаров </b> </h3>
+            <h5> <b>* Подписчики ~ * Подписки </b> </h5>
+        </div>
     </div>
-    <script src="./js/regForm.js"></script>
+    <div class="list-pages">
+        <div class="pages">
+            <button>Профиль </button>
+            <button>Марафоны </button>
+            <button>Настройки </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="profile-info"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

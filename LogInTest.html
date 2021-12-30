@@ -5,28 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./logintest.css">
+    
+    <style>
+
+      body{
+    background: purple;
+}
+.bg--regPage{
+  width: 100%;
+  height: 100%;  
+}
+.regPage{
+    display: none ;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 30%;
+
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rgb;
+    background-color: rgba(red, green, blue, 0.7);
+  }
+  span{
+  }
+    </style>
 </head>
+
 <body>
     
 
 
     <button> Log In </button>
-<span> &times; </span>
 
 
+<div class="bg--regPage">
 
+</div>
 <div class="regPage">
+<span style="width: 100%; height: 100%;"> &times; </span>
   <form action="">
-    <input type="text" class="login">
-    <input type="password" class ="password">
+    <input type="text" class="login" placeholder="Имя пользователя">
+    <input type="password" class ="password" placeholder="Пароль">
+    <input type="checkbox" name="" id="">
+    <button>Напомнить пароль</button>
   </form>
 </div>
 
 
 
+<script>
+  let body = document.querySelector('body')
+  let regPage = document.querySelector('.regPage');
+  let btn = document.querySelector('button').addEventListener('click', () => {
+    regPage.style.display = "block"
+    body.style.background = "green"
+    exit.style.display = "flex"
 
+  })
+  let exit = document.querySelector('span').addEventListener('click', () => {
+    regPage.style.display = "none"
+    body.style.background="purple"
+  })
+</script>
 
-<script src="./Logintest.js"></script>
 </body>
 </html>

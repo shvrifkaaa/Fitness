@@ -61,17 +61,17 @@ body {
     right: 3%;
     word-spacing: 31px;
     font-size: 24px;
-}
-
-.login a {
+  }
+  
+  .login a {
     text-decoration: none;
     font-size: 28px;
-    border: 1px solid;
-    border-radius: 25px;
-    background-color: #e9b047;
+    border: none;
+    color: white;
 }
-
-.login input[type=text],.login input[type=password] {
+  
+  .login input[type=text],
+  .login input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -81,26 +81,28 @@ body {
   }
   
   /* Add a background color when the inputs get focus */
-  .login input[type=text]:focus,.login input[type=password]:focus {
+  .login input[type=text]:focus,
+  .login input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
   
   /* Установите стиль для всех кнопок */
   .login button {
-    background-color: #7a74bd;
+    background-color: #3573ff;
     color: white;
-    margin: 3px 0;
+    margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 130px;
     opacity: 0.9;
-    height: 34px;
+    height: 40px;
     border-radius: 20px;
-}
+  }
+  
   
   .login button:hover {
-    opacity:1;
+    opacity: 1;
   }
   
   /* Дополнительные стили для кнопки Отмена */
@@ -109,7 +111,8 @@ body {
   }
   
   /* Float cancel and signup buttons and add an equal width */
-  .login .cancelbtn,.login .signupbtn {
+  .login .cancelbtn,
+  .login .signupbtn {
     float: left;
     width: 50%;
   }
@@ -121,23 +124,31 @@ body {
   
   /* Модальный (фон) */
   .login .modal {
-    display: none; /* Скрыто по умолчанию */
-    position: fixed; /* Оставаться на месте */
-    z-index: 1; /* Сидеть на вершине */
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
     left: 0;
     top: 0;
-    width: 100%; /* Полная ширина */
-    height: 100%; /* Полная высота */
-    overflow: auto; /* Включите прокрутку, если это необходимо */
-    padding-top: 50px;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgba(0, 0, 0, 35%);
   }
   
   /* Модальное содержание/бокс */
   .login .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
+    margin: 5% auto 15% auto;
+    /* 5% сверху, 15% снизу и по центру */
     border: 1px solid #888;
-    width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    width: 40%;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
   }
   
   /* Style the horizontal ruler */
@@ -145,12 +156,12 @@ body {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
-   
+  
   /* Кнопка закрытия (x) */
   .login .close {
     position: absolute;
     right: 580px;
-    top: 144px;
+    top: 111px;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -158,7 +169,7 @@ body {
     opacity: .5;
   }
   
-  .login  .close:hover,
+  .login .close:hover,
   .login .close:focus {
     color: #f44336;
     cursor: pointer;
@@ -1102,6 +1113,16 @@ footer .right_side_footer .footer_links .links {
     .menu__btn{
         margin:6px 0 0 42px  ;
         display: none;
+    }
+    .login .modal-content{
+        width: 71%;
+    }
+    .login .cancelbtn { 
+        margin-right: 0px;
+    }
+    .login .close{
+        top: 61px;
+        right: 159px;
     }
     .post1{
         background-attachment: fixed;

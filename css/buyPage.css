@@ -68,7 +68,8 @@ body {
   font-size: 28px;
   border: 1px solid;
   border-radius: 25px;
-  background-color: #e9b047;
+  background-color: #e7d5b5;
+  border: none;
 }
 
 .login input[type=text],
@@ -138,7 +139,7 @@ body {
   /* Полная высота */
   overflow: auto;
   /* Включите прокрутку, если это необходимо */
-  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 35%);
 }
 
 /* Модальное содержание/бокс */
@@ -161,7 +162,7 @@ body {
 .login .close {
   position: absolute;
   right: 580px;
-  top: 144px;
+  top: 111px;
   font-size: 40px;
   font-weight: bold;
   color: black;
@@ -377,17 +378,36 @@ footer .right_side_footer .footer_links .links {
     margin-top: -3px;
 }
 .rightbar{
-    display: block;
-    width: fit-content;
-    left: 32%;
-    word-spacing: 24px;
-    top: 18px;
-    font-size: 25px;
+  display: block;
+  width: fit-content;
+  left: 33%;
+  word-spacing: 24px;
+  top: 18px;
+  font-size: 25px;
+}
+.hamburger-menu{
+  display: block;
+}
+.menu__box{
+  display: block;
 }
 .login button{
-    margin: 7px -9px 0 0;
+  margin: 7px -9px 0 0;
 }
-
+.menu__btn{
+  margin:6px 0 0 42px  ;
+  display: none;
+}
+.login .modal-content{
+  width: 71%;
+}
+.login .cancelbtn { 
+  margin-right: 0px;
+}
+.login .close{
+  top: 61px;
+  right: 159px;
+}
 .post1{
   width: 90%;
   height: 70vh;
@@ -404,7 +424,7 @@ footer .right_side_footer .footer_links .links {
 }
 .post2 .post2-img img{
   margin-top: -240px;
-  margin-left: 58px;
+  margin-left: 51px;
 }
 
 footer{
