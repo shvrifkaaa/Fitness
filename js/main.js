@@ -25,11 +25,12 @@ function scrollTo(element) { // ПЛАВНЫЙ СКРОЛЛ ДО ЭЛЕМЕНТ�
         behavior: 'smooth'
     })
 }
+
+
 var footer_about_btn = document.querySelector('#footer_left_about_btn');
 var footer_home_btn = document.querySelector('#footer_left_home_btn');
-var header_about = document.querySelector('.btn_about');
-var post2 = document.querySelector('.post2');
-var header_contact = document.querySelector('.btn_contact');
+var header_about = document.querySelector('#btn_about');
+var header_contact = document.querySelector('#btn_contact');
 var invite = document.querySelector('.invite');
 var post1 = document = document.querySelector('.post1');
 var footer_contact_btn = document.querySelector('#footer_left_contact_btn');
@@ -38,24 +39,14 @@ var trainers = document.querySelector ('.trainers')
 var burger_invite = document.querySelector ('.btn_invite')
 var burger_contact = document.querySelector('.btn_contact')
 var footer = document.querySelector('footer')
-burger_invite.addEventListener('click', () => {
-    scrollTo(invite)
-    console.log('scrolled to invite')
-})
-burger_contact.addEventListener('click', ()=> { 
-    scrollTo(footer)
-    console.log('scrolled to footer')
-})
 
-burger_trainers.addEventListener('click', () => { 
-    scrollTo(trainers)
-    console.log('scrolled to trainers')
-})
 
-header_about.addEventListener('click', () => {
+
+var post2 = document.querySelector('.post2');
+header_about.addEventListener('click', function(){
     scrollTo(post2);
-    console.log('scrolled to post2')
 })
+
 header_contact.addEventListener('click', () => {
     scrollTo(invite)
     console.log('scrolled to invite')
@@ -67,23 +58,19 @@ footer_home_btn.addEventListener('click', () => {
 footer_about_btn.addEventListener('click', () => {
     scrollTo(post2);
     console.log('scrolled to post2')
+
 })
 footer_contact_btn.addEventListener('click', () => {
     scrollTo(invite)
     console.log('scrolled to invite')
 })
 
-function profile (){
-    login_ok = false; 
-    user_name = ""
-    password = ""
-    if (user_name == "login" && password == "pass"){
-        login_ok = true
-        window.location="https://www.youtube.com"
-    }
-    if (user_name =="login2" && password == "pass2"){
-        login_ok = true;
-        window.location = "https://www.instagram.com"
-    }
-    if (login_ok == false) alert ('Неверный логин')
-}
+
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})

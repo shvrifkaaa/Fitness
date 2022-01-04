@@ -40,35 +40,7 @@
 
         <div class="login" style="position: fixed;">
 
-            <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
-
-            <div id="id01" class="modal">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Закрыть Modal">&times;</span>
-                <form class="modal-content">
-                    <div class="container">
-                        <h1>Вход</h1>
-                        <hr>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder=" Введите Email" name="email" required>
-
-                        <label for="psw"><b>Пароль</b></label>
-                        <input type="password" placeholder=" Введите пароль" name="psw" required>
-
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                            Запомнить меня
-                        </label>
-
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Отменить</button>
-                            <button type="submit" class="signupbtn" onclick="input()">Вход</button>
-                        </div>
-                        <a href="./regPage.html"> Регистрация </a>
-                    </div>
-                </form>
-            </div>
+           
     </header>
 <div class="bg-profile" >
     <div class="bg-page">
@@ -79,21 +51,66 @@
         </div>
     </div>
     <div class="list-pages">
-        <div class="pages">
-            <button>Профиль </button>
-            <button>Марафоны </button>
-            <button>Настройки </button>
+        <div class="btn-pages">
+            <div class="block">
+                <button onclick=
+                "document.querySelector('.profile-info').style.display='block';
+                document.querySelector('.challenges-info').style.display='none';"
+                
+                >Профиль </button>
+            </div>
+            <button style="margin-left: 10px;" 
+            onclick="document.querySelector('.challenges-info').style.display='block';
+             document.querySelector('.profile-info').style.display='none'">Марафоны </button>
         </div>
     </div>
 
 
 
 
+    <div class="info-pages">
+        <div class="profile-info">
+            <h4>Профиль</h4>
+            <p><b>Дата регистрации: 31 дек. 2021г.</b></p>
+            <hr>
+            <p> Мужчина / Женщина</p>
+            <p><b>Электронная почта: kalandarov16.kg@gmail.com</b></p>
+        </div>
+        <div class="challenges-info">
+            <h4>Мои марафоны</h4>
+            <p><b>Проверьте статус марафонов</b></p>
+                <hr>
+            <div class="challenges">
+                <div class="challenge">
+                    <img src="./img/challenge_challenge2.png" style="width: 294px;" alt="">
+                    <div class="challenge-text">
+                        <p>Cardio Challenge 1 </p>
+                        <a href="####"> open </a>
+                    </div>
+                </div>
+                <hr>
 
+                <div class="challenge">
+                    <img src="./img/challenge_challenge2.png" style="width: 294px;" alt="">
+                    <div class="challenge-text">
+                        <p> challenge name </p>
+                        <a href=""> Challenge link</a>
+                    </div>
+                </div>
 
-    <div class="profile-info"></div>
+                <div class="challenge">
+                    <img src="" alt="">
+
+                    <div class="challenge-text">
+                        <p></p>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-
 
 
 

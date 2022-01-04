@@ -1,9 +1,81 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 
+
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+    display: none;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu li {
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: roboto-thin, roboto, sans-serif;
+    font-family: 'roboto', roboto, sans-serif;
 
 }
 
@@ -40,6 +112,9 @@ body {
     font-size: 3em;
 }
 
+#header a{
+
+}
 .rightbar {
     position: fixed;
     left: 56%;
@@ -52,6 +127,7 @@ body {
 .rightbar a {
     scroll-behavior: smooth;
     color: black;
+    text-decoration: none;
 
 }
 
@@ -235,7 +311,7 @@ body {
     position: unset;
     /* top: 22%; */
     /* left: 46px; */
-    font-size: 30px;
+    font-size: 25px;
     word-spacing: 10px;
     margin: 0.3% 0 0 0;
 }
@@ -245,9 +321,10 @@ body {
     /* top: 15px; */
     /* left: 45px; */
     /* width: 35%; */
-    font-size: 19px;
+    font-size: 17px;
     word-spacing: 3px;
     letter-spacing: 0px;
+    line-height: 25px;
     margin: 0.8% 0 0 0;
 }
 
@@ -418,9 +495,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    width: 196.4vh;
+    width: 100%;
     position: unset;
-    margin-top: 62px;
+    margin-top: 155px;
     margin-left: -20px;
 }
 
@@ -462,6 +539,7 @@ body {
     font-family: roboto-thin, roboto, sans-serif;
     width: 390px;
     height: 119px;
+    margin-top: 45px;
 }
 
 .post2 button {
@@ -751,7 +829,19 @@ body {
     margin-top: 60px;
     width: fit-content;
     color: black;
-  }.right{
+  }
+  .left-text h1{
+    width:fit-content;
+    line-height:65px;
+    font-size:50px;
+    font-weight: bolder;
+    }
+    .left-text h4 {
+        font-size: 28px;
+        margin-top: 36px;
+        line-height: 40px;
+    }
+    .right {
     width: 50%;
     height: 100%;
   }
@@ -770,11 +860,22 @@ body {
     width: 40%;
     margin: 31px -156px 0 140px;
 }
+.right form .input_msg{
+    padding: 35px 8px 120px 0px;
+}
+.right form .input_msg input {
+    width: 541px;
+    padding-bottom: 25px;
+    height: 95px;
+
+}
+
 .right form div input{
     height: 52px;
     width: 225px;
     font-size: 25px;
 }
+
 .right form div p{
   font-size: 20px;
   font-weight: bolder;
@@ -1010,13 +1111,13 @@ footer .right_side_footer .footer_links .links {
     }
     
 
-    /* .post1 .post1_text1 {
+    .post1 .post1_text1 {
         left: 227%;
     }
     .post1_text1 .view_all_btn{
         position: relative;
         bottom: -28.4%;
-    } */
+    }
 
     .post3_block .block1 img {
         width: 100%;
@@ -1030,74 +1131,23 @@ footer .right_side_footer .footer_links .links {
         width: 100%;
     }
 
-    .invite {
-        margin-left: 187px;
-        width: 1594px;
-    }
-    .invite .right{
-        height: 670px;
-    }
-    .post3_text1 button{
-        background: green;
-    }
-    footer {
-        width: 182vh;
-    }
-    .hamburger-menu{
-        display: block;
-    }
-}
-@media(min-width: 767px) and (max-width:991.89px)  /* Стили под Ipad, Ipad mini   */{
-    .post1{
-        width: 102%;
-        background-size: contain;
-        background-attachment: fixed;
-        height: 392px;
-    }
-    #post1_text{
-        width: 67%;
-    }
-    .post1_text1{
-        position: absolute;
-        left: 214.8%;
-        padding-top: 0px;
-    }
-    .post3_text1{
-        margin-left: 33px;
-    }
-    .post1_text1 .view_all_btn a .btn_block{
-        margin-top: 215px;
-    }
-    .post3_block{
-    display: flex;
-    justify-content: center;
-    width: 162.3vh;
-    margin-left: 153px;
-    }
-    header .rightbar{
-        font-size: 20px;
-        word-spacing: 6px;
-        margin-top: 8px;
-        left: 30%;
-    }
-    header .logo #header_name{
-        font-size: 20px ;
-    }
-    header .logo img{
-        width: 20px;
 
-    };
+
+
+
+
 }
+
 @media(max-width:991.89px){
 
 }
-@media (min-width: 992px) and (max-width:1025px) { 
+@media (min-width: 958px) and (max-width:1025px) { 
 
     .rightbar{
         display: block;
         width: fit-content;
-        left: 33%;
-        word-spacing: 24px;
+        left: 31%;
+        word-spacing:19px;
         top: 18px;
         font-size: 25px;
     }
@@ -1108,7 +1158,7 @@ footer .right_side_footer .footer_links .links {
         display: block;
     }
     .login button{
-        margin: 7px -9px 0 0;
+        margin: 10px -9px 0 0;
     }
     .menu__btn{
         margin:6px 0 0 42px  ;
@@ -1126,7 +1176,7 @@ footer .right_side_footer .footer_links .links {
     }
     .post1{
         background-attachment: fixed;
-        background-size: contain;
+        background-size: cover;
         height: 443px;
     }
     #post1_text{
@@ -1249,4 +1299,331 @@ footer .right_side_footer .footer_links .links {
         padding-top: 8%;
     }
     
+}
+@media (min-width: 350px) and (max-width: 415px){
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    #header img{
+        left: 0px;
+        width: 55px;
+        top: 18px;
+    }
+    #header h2{
+        left: 63px;
+        bottom: 12px;
+        font-size: 35px;
+        width: fit-content;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 70px;
+    }
+    .menu-btn.active{
+        text-decoration: none;
+    }
+    .menu-btn.active nav li a{
+        color: black;
+    }
+    .menu{
+        background: #ff9c76;
+        top: 70px;
+        z-index: 2;
+    }
+    .menu-btn span{
+        display: block;
+        width: 44px;
+    }
+    
+    
+    .login{
+        display: none;
+    }
+    .post1_text1{
+        display: none;
+    }
+    .post1{
+        background-attachment: none;
+        background-position: center center;
+
+    }
+    #post1_text{
+        margin-left: 46px;
+        margin-top: 69px;
+        display: flex;
+        flex-direction: column;
+    }
+    #post1_text h1{
+        width: fit-content;
+        font-size: 43px;
+        margin-top: -53px;
+    }
+    #post1_text h4{
+        font-size: 28px;
+        word-spacing: 10px;
+        margin: 70.3% 0 26px 0;
+    }
+    #post1_text h5{
+        font-size: 20px;
+        word-spacing: 2px;
+        width: fit-content;
+
+        margin: 3.8% 0 0 0;
+    }
+    #post1_text button{
+        background: #673ab7;
+        transition: .5s;
+    }
+    #post1_text button:hover{
+        background: black;
+        transition: .5s;
+        box-shadow: 0 0 19px 25px rgb(80, 89, 114 / 22%);
+}
+    #post1_text button a{
+        color: white;
+    }
+    .post2{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+
+    }
+    .post2 .post2_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: auto;
+        left: 0;
+        top: 0;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin: 15px 25px;
+    }
+    .post2 .img2{
+        opacity: 1;
+        width: auto;
+        height: fit-content;
+        top: 0;
+        left: 0px;
+
+    }
+    .post2 .post2_text #text3{
+        font-size: 18px;
+        width: auto;
+        height: auto;
+    }
+    .post2 .post2_text #text2{
+        width: fit-content;
+    }
+    .post2 .trainers{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .post2_text2{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        left: 0;
+        top: 0;
+        width: fit-content;
+    }
+    .post2_text2 h1{
+        font-size: 35px;
+        width: fit-content;
+        height: 58px;
+        font-weight: 600;
+ 
+    }
+    .post2_text2 p{ 
+        width: fit-content;
+        margin-left: 12px;
+    }
+    .post2 .trainers a{
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+    }
+    .challenges{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .post3_text1{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 0 ;
+        margin-left: 12px;
+
+    }
+    .post3_text1 h1{
+        width: fit-content;
+        height: fit-content;
+        font-size: 30px;
+        padding: 0;
+
+    }
+    .post3_text1 h6{
+        width: auto;
+        height: auto;
+        padding-top: 20px;
+    }
+    .post3_text1 button{
+        left: 0;
+        top: 0;
+        width: 180px;
+    }
+    .post3_block{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    .post3_block .block1, .block2, .block3{
+        width: auto;
+        height: auto;
+        margin: 18px;
+    }
+    .post3_block .block1 button , .block2 button, .block3 button{
+        margin-bottom: 15px;
+    }
+    .invite{
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0;
+        
+        background: none;
+    }
+    .invite .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .invite .left .left-text{
+        margin: 0;
+
+        width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        margin: 10px 17px;
+
+    }
+    .left-text h1{
+        width: fit-content;
+        font-size: 24px;
+        margin-top: 25px;
+        line-height: 1.4;
+
+    }
+    .left-text h4{
+        margin-top: 30px;
+        font-size: 21px;
+        line-height: 1.3;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+    }
+    .right-form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .right form{
+        height: fit-content;
+    }
+    .right form div{
+        width: 100%;
+        margin:15px 15px;
+    }
+    .right form div input{
+        height: 52px;
+        width: 100%;
+
+        font-size: 25px;
+
+    }
+    .right form .input_msg p{
+        width: fit-content;
+    }
+    .right form .input_msg input{
+        width: 328px;
+        padding-bottom: 25px;
+        height: 95px;
+    }
+    .right form button{
+        width: 220px;
+
+        margin-left: 70px;
+        right: 0;
+        bottom: 70px;    
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        width: 100%;
+    }
+    footer .left_side_footer{
+        width: 100%;
+        height: 100%;
+    }
+    footer .left_side_footer{
+        border: none;
+
+    }
+    footer .left_side_footer h5{
+        text-align: center;
+        margin: 15px 130px;
+    }
+    footer .center_side_footer{
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        position: inherit;
+
+
+    }
+    footer .center_side_footer h5, h6, input{
+        width: fit-content;
+    }
+
+    footer .center_side_footer .footer_input {
+        left: 0;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 15px;
+        margin: 15px 15px;
+
+    }
+    footer .center_side_footer .footer_input .input_msg{
+        width: 95%;
+        margin: 15px 15px;
+    }
+
 }

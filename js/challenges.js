@@ -8,6 +8,7 @@ $(document).ready(function () { // Ждём загрузки страницы //
 
 function anim() {
     $('#header').css(anim_style);
+    console.log('asd')
 }
 var anim_style = {
     "background-color": "rgb(181,175,239)",

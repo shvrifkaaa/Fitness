@@ -1,9 +1,9 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'roboto' sans-serif;
+    font-family: 'roboto', sans-serif;
 
 }
 
@@ -356,18 +356,18 @@ footer .right_side_footer .footer_links .links {
 
 
 
-@media (min-width:992px) and (max-width:1025px){
-    header .logo{
+@media (min-width:958px) and (max-width:1025px){
+    /* header .logo{
         width: fit-content;
         height: fit-content;
         margin-left: -20px;
         margin-top: -3px;
-    }
+    } */
     .rightbar{
         display: block;
         width: fit-content;
-        left: 33%;
-        word-spacing: 24px;
+        left: 31%;
+        word-spacing:19px;
         top: 18px;
         font-size: 25px;
     }
@@ -378,7 +378,7 @@ footer .right_side_footer .footer_links .links {
         display: block;
     }
     .login button{
-        margin: 7px -9px 0 0;
+        margin: 10px -9px 0 0;
     }
     .menu__btn{
         margin:6px 0 0 42px  ;

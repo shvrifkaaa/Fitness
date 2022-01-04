@@ -190,40 +190,121 @@ body {
 .bg-profile{
     display: flex;
     flex-direction: column;
-    height: 600px;
-    border: 1px solid black;
-    margin-top: 70px;
-    border-top: none;
     align-items: center;
+    
+    margin-top: 70px;
+    
+    height:fit-content;
+    border-top: none;
+    
 }
 .bg-page{
-    width: 50%;
-    height: 35%;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: end;
-    background-color:rgb(86, 74, 167);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+
+  width: 50%;
+  height: 35%;
+  border: 1px solid black;
+  background-color:rgb(86, 74, 167);
+    
 }
 .bg-page img{
     width: 13%;
+
     border-radius: 47px;
+
     margin: 0 33px 25px 45px;
 }
 .bg-page .bg-Name{
+
   color: #cfd3d0;
+
   margin-bottom: 20px;
 }
 .list-pages { 
   display: flex;
   flex-wrap: wrap;
+
   width: 50%;
 }
-.list-pages .pages{
+.list-pages .btn-pages{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+.info-pages{
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 25px;
+}
+.profile-info{
+  width: 100%;
+  height: 50%;
+
+  align-items:flex-start;
+}
+.list-pages .btn-pages button{
+  text-decoration: none;
+  border-radius: 25px;
+  border:none;
+  outline: none;
+  font-size: 30px;
+  margin-top: 5px;
+  background: rgb(133, 78, 195);
+  transition: 0.5s;
+  color: white;
+  width: 180px;
+}
+.list-pages .btn-pages button:hover{
+   background: black;
+   transition: 0.5s;
+}
+   .challenges-info {
+  width: 100%;
+  height: 50%;
+
+
+  align-items: flex-start;
+
+  display: none;
+}
+.challenges{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+  
+}
+.challenge{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.challenge  .challenge-text {
+  margin-left: 35px;
+  line-height: 50px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.challenge .challenge-text a{
+text-decoration: none;
+margin-top: 15px;
+}
+.challenge .challenge-text p{
+margin-bottom: 0;  
+
+}
 
 
 
@@ -234,39 +315,44 @@ body {
 
 
 
+@media (min-width: 992px) and (max-width:1025px) {
 
+  .rightbar {
+    display: block;
+    width: fit-content;
+    left: 33%;
+    word-spacing: 24px;
+    top: 18px;
+    font-size: 25px;
+  }
 
-@media (min-width: 992px) and (max-width:1025px) { 
+  .hamburger-menu {
+    display: block;
+  }
 
-    .rightbar{
-        display: block;
-        width: fit-content;
-        left: 33%;
-        word-spacing: 24px;
-        top: 18px;
-        font-size: 25px;
-    }
-    .hamburger-menu{
-        display: block;
-    }
-    .menu__box{
-        display: block;
-    }
-    .login button{
-        margin: 7px -9px 0 0;
-    }
-    .menu__btn{
-        margin:6px 0 0 42px  ;
-        display: none;
-    }
-    .login .modal-content{
-        width: 71%;
-    }
-    .login .cancelbtn { 
-        margin-right: 0px;
-    }
-    .login .close{
-        top: 61px;
-        right: 159px;
-    }
+  .menu__box {
+    display: block;
+  }
+
+  .login button {
+    margin: 7px -9px 0 0;
+  }
+
+  .menu__btn {
+    margin: 6px 0 0 42px;
+    display: none;
+  }
+
+  .login .modal-content {
+    width: 71%;
+  }
+
+  .login .cancelbtn {
+    margin-right: 0px;
+  }
+
+  .login .close {
+    top: 61px;
+    right: 159px;
+  }
 }
