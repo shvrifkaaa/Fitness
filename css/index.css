@@ -1425,8 +1425,8 @@ footer .right_side_footer .footer_links .links {
         flex-direction: column;
     }
     .post2_text2{
-        margin-top: 100px;
-        margin-bottom: 50px;
+        
+        margin: 100px 15px 50px 23px;
         left: 0;
         top: 0;
         width: fit-content;
@@ -1460,8 +1460,7 @@ footer .right_side_footer .footer_links .links {
         width: auto;
         height: auto;
         padding: 0 ;
-        margin-left: 12px;
-
+        margin: 15px 20px;
     }
     .post3_text1 h1{
         width: fit-content;
@@ -1567,34 +1566,40 @@ footer .right_side_footer .footer_links .links {
         width: fit-content;
     }
     .right form .input_msg input{
-        width: 328px;
+        width: 101%;
         padding-bottom: 25px;
         height: 95px;
     }
     .right form button{
-        width: 220px;
+        width: 90%;
 
-        margin-left: 70px;
+        margin: 15px 21px;
+        top: -90px;  
         right: 0;
-        bottom: 70px;    
+        bottom: 70px;  
     }
     footer{
         display: flex;
         flex-direction: column;
         left: 0;
         width: 100%;
+        bottom: 0;
     }
     footer .left_side_footer{
         width: 100%;
         height: 100%;
-    }
-    footer .left_side_footer{
         border: none;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
+
     footer .left_side_footer h5{
         text-align: center;
-        margin: 15px 130px;
+        padding: 0;
+        margin: 0;
     }
     footer .center_side_footer{
         width: 100%;
@@ -1602,11 +1607,18 @@ footer .right_side_footer .footer_links .links {
         bottom: 0;
         left: 0;
         position: inherit;
-
+        background: none;
 
     }
     footer .center_side_footer h5, h6, input{
         width: fit-content;
+    }
+    footer .center_side_footer h5{
+        font-size: 23px;
+        text-align: center;
+    }
+    footer .center_side_footer input{
+        width: 90%;
     }
 
     footer .center_side_footer .footer_input {
@@ -1621,9 +1633,25 @@ footer .right_side_footer .footer_links .links {
         margin: 15px 15px;
 
     }
-    footer .center_side_footer .footer_input .input_msg{
-        width: 95%;
-        margin: 15px 15px;
+    footer .center_side_footer .footer_input button{
+        width: 300px;   
+        margin-top: 15px;
     }
+    footer .right_side_footer .footer_links{
+        position: inherit;
+        
+        padding-top: 39px;
+        margin-top: 15px;
+        padding-left: 0;
 
+        width: 100%;
+        height: 30vh;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
 }
