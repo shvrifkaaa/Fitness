@@ -12,7 +12,7 @@
 <body>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    <header id="header" style="position: fixed;">
+    <header id="header">
         <div class="logo">
             <img src="./img/logo.png" alt="">
             <h2> <a href="index.html" id="header_name" style="text-decoration: none; color: black;">
@@ -30,7 +30,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="login" style="position: fixed;">
+        <div class="login">
 
             <button class="login" onclick="document.getElementById('id01').style.display='block'">Вход</button>
 
@@ -63,8 +63,48 @@
             </div>
         </div>
     </header>
+
+
     <div class="menu">
         <nav>
+            <li>
+                <div class="login" style="position: fixed; display: block;">
+
+                    <button style="display: block;" class="login"
+                     onclick="document.querySelector('#id01').style.display='block';">
+                     
+                     Вход</button>
+
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Закрыть Modal">&times;</span>
+                        <form class="modal-content" action="./action_page.php">
+                            <div class="container">
+                                <h1>Вход</h1>
+                                <hr>
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder=" Введите Email" name="email" required>
+
+                                <label for="psw"><b>Пароль</b></label>
+                                <input type="password" placeholder=" Введите пароль" name="psw" required>
+
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                    Запомнить меня
+                                </label>
+
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Отменить</button>
+                                    <button type="submit" class="signupbtn">Вход</button>
+                                    <button type="button" class="regPage" style="width: 207px;"><a
+                                            href="./regPage.html"> Регистрация </a> </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
             <li><a href="#">Главная</a></li>
             <li><a href="#">О нас</a></li>
             <li><a href="#">Услуги</a></li>
@@ -114,8 +154,8 @@
             </div>
         </div>
     </div>
-
-        <div class="post2">
+    <div class="container">
+    <div class="post2">
             <div class="post2_text">
                 <span id="text1"> ABOUT H2FIT </span> <br>
 
@@ -149,7 +189,7 @@
                 </a>
             </div>
 
-        </div>
+    </div>
 
 
     <div class="challenges">
@@ -256,6 +296,10 @@
 
 
     </div>
+</div>
+
+
+
 
     <footer> 
         <div class="left_side_footer">
@@ -264,7 +308,7 @@
                 <a href="####" id="footer_left_home_btn"> Home</a> </br>
                 <a href="####" id="footer_left_about_btn"> About </a></br>
                 <a href="./challenges.html"> Challenges </a> </br>
-                <a href="####"> Community</a> </br>
+                <a href="####" id="footer_left_community_btn"> Community</a> </br>
                 <a href="####" id="footer_left_contact_btn"> Contact</a> </br>
             </h5>
         </div>

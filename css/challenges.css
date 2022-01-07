@@ -55,6 +55,68 @@ body {
 
 }
 
+
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+    display: none;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu li {
+	list-style-type: none;
+}
+
 .login {
     position: fixed;
     top: 1.1%;
@@ -209,6 +271,15 @@ body {
     padding-top: 167px;
     padding-left: 50px;
     color: white;
+}
+
+.post1 .post1_text h1{
+    font-size: 68px;
+    padding-bottom: 25px;
+}
+.post1 .post1_text h3{
+    width: 700px; 
+    font-size: 21px;
 }
 
 .post2--challenges{
@@ -442,5 +513,109 @@ footer .right_side_footer .footer_links .links {
         width: 18%;
         padding-left: 40px;
         padding-top: 8%;
+    }
+}
+@media (min-width: 350px) and (max-width: 415px){
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 14px 0 14px;
+
+    }
+    #header img{
+        left: 0px;
+        width: 55px;
+        top: 18px;
+    }
+    #header h2{
+        left: 63px;
+        bottom: 12px;
+        font-size: 35px;
+        width: fit-content;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 70px;
+    }
+    .menu-btn.active{
+        text-decoration: none;
+    }
+    .menu-btn.active nav li a{
+        color: black;
+    }
+    .menu{
+        background: #ff9c76;
+        top: 70px;
+        z-index: 2;
+    }
+    .menu-btn span{
+        display: block;
+        width: 44px;
+    }
+    
+    .login{
+        display: none;
+    }
+    .rightbar{
+        display: none;
+    }
+    .post1{
+        width: 100%;
+        background-position: 62% 60px;
+    }
+    
+    .post1 .post1_text{
+        padding-top: 21px;
+        padding-left: 16px;
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .post1 .post1_text h1{
+        font-size: 34px;
+        width: fit-content;
+        margin:0;
+        padding:0;
+
+    }
+    .post1 .post1_text h3{
+        font-size: 19px;
+        width: fit-content;
+        margin-right: 1px;
+    }
+    .post2--challenges{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .challenge-active{
+        width: 92%;
+        height: 403px;
+        margin:0 auto;
+        margin-top: 35px;
+        margin: 15px;
+    }
+    .challenge-active .challenge-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 6px 24px;
+    }
+    .challenge-active .challenge-text h1{
+        font-size: 34px;
+    }
+    .challenge-active .challenge-text h3{
+        font-size: 22px;
+    }
+    .challenge-active .challenge-text p{
+        font-size: 29px;
     }
 }
